@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+.mb-70{
+  margin-bottom: 70px;
+}
+
+input{
+  font-size: 16px;
+  color: #243E8B7A;
+  padding: 16px 32px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+input::placeholder{
+  font-size: 16px;
+  color: #243E8B7A;
+}
+
+/* Login */
+
+.ams-login{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login-bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 0 100px;
+  background-image: url("../images/bg/log-content-bg.jpg");
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+  background-image: url("../images/bg/log-form-bg.jpg");
+}
+
+.login-content h1{
+  font-size: 52px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.login-content p,
+.login-form p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+}
+
+.login-form fieldset input{
+  width: 100%;
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 28px;
+}
+
+.remember-pass{
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-pass label,
+.remember-pass a{
+  font-size: 16px;
+  color: #fff;
+}
+
+.login-btn{
+  width: 100%;
+  font-weight: 700;
+  color: #1C1A1A;
+  background-color: #FFC700;
+  margin-top: 40px;
+  padding: 18px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
