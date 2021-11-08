@@ -368,7 +368,7 @@ input::placeholder{
 .ams-content-boxes{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 30px;
+  grid-gap: 24px;
 }
 .single-info-box{
   display: grid;
@@ -431,7 +431,7 @@ input::placeholder{
 .stat-bar{
   position: relative;
   width: 100%;
-  height: 5px;
+  height: 7px;
   background-color: #000;
   border-radius: 100px;
   margin-bottom: 8px;
@@ -444,6 +444,7 @@ input::placeholder{
   width: 70%;
   height: 100%;
   background-color: #fff;
+  border-radius: 100px;
 }
 
 .stat-meta-data p{
