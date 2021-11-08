@@ -69,6 +69,38 @@ i{
   background: #464646;
 }
 
+.bg-gradient-violate{
+  background: linear-gradient(89.49deg, #582CD8 10.69%, #3263F3 97.52%);
+}
+
+.bg-gradient-orange{
+  background: linear-gradient(89.49deg, #FB601F 10.69%, #F8A22E 97.52%);
+}
+
+.bg-gradient-green{
+  background: linear-gradient(89.49deg, #2CB780 10.69%, #7AC54E 97.52%);
+}
+
+.bg-gradient-red{
+  background: linear-gradient(89.49deg, #F21D5F 10.69%, #FC5817 97.52%);
+}
+
+.bg-gradient-blue{
+  background: linear-gradient(89.49deg, #23A9C8 10.69%, #3567B6 97.52%);
+}
+
+.bg-gradient-limegreen{
+  background: linear-gradient(89.49deg, #49B94D 10.69%, #AFD15D 97.52%);
+}
+
+.bg-gradient-orange-rev{
+  background: linear-gradient(89.49deg, #49B94D 10.69%, #AFD15D 97.52%);
+}
+
+.bg-gradient-magenta{
+  background: linear-gradient(89.49deg, #EB3B4A 10.69%, #B92A95 97.52%);
+}
+
 .mt-20{
   margin-top: 20px;
 }
@@ -332,12 +364,13 @@ input::placeholder{
 }
 
 /* ----- Dashboard Boxes ----- */
+
 .ams-content-boxes{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 30px;
 }
-.ams-info-box{
+.single-info-box{
   display: grid;
   grid-template-columns: 75px 1fr;
   grid-column-gap: 30px;
@@ -346,7 +379,7 @@ input::placeholder{
   border-radius: 5px;
 }
 
-.ams-info-box .info-box-icon{
+.single-info-box .info-box-icon{
   height: 75px;
   font-size: 30px;
   background-color: #fff;
@@ -360,19 +393,62 @@ input::placeholder{
   color: #fff;
 }
 
-.ams-info-box:nth-child(4n - 3) .info-box-icon{
+.info-box-content h1{
+  font-size: 60px;
+}
+
+.single-info-box:nth-child(4n - 3) .info-box-icon{
   color:#243E8B
 }
 
-.ams-info-box:nth-child(4n - 2) .info-box-icon{
+.single-info-box:nth-child(4n - 2) .info-box-icon{
   color:#E54454
 }
 
-.ams-info-box:nth-child(4n - 1) .info-box-icon{
+.single-info-box:nth-child(4n - 1) .info-box-icon{
   color:#F48020
 }
 
-.ams-info-box:nth-child(4n) .info-box-icon{
+.single-info-box:nth-child(4n) .info-box-icon{
   color:#341EC0
+}
+
+.single-stat-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 18px;
+  border-radius: 5px;
+}
+
+.single-stat-box .stat-box-heading,
+.single-stat-box .stat-meta-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-bar{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+
+.stat-bar .progress-line{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.stat-meta-data p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
 }
 
