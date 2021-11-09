@@ -259,7 +259,41 @@ input::placeholder{
 }
 
 .sidebar-menu .sub-menu{
+  position: relative;
   display: none;
+  color: #FFFFFF80;
+  background-color: #10193A;
+}
+
+.sidebar-menu .sub-menu::before{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  left: 24px;
+  background-color: #fff;
+}
+
+.sub-menu li a{
+  position: relative;
+  margin-left: 30px;
+}
+
+.sub-menu li a::before{
+  position: absolute;
+  content: "";
+  left: -5px;
+  top: 20px;
+  width:20px;
+  height: 2px;
+  background-color:  #FFFFFF80;
+
+}
+
+.sub-menu li a.active{
+  background-color: transparent;
+  border: none;
+  color: #fff;
 }
 
 /* ----- Dashboard Content ----- */
