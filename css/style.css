@@ -11,6 +11,7 @@ html{
 }
 
 body{
+  position: relative;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
@@ -215,7 +216,7 @@ input::placeholder{
   top: 0;
   left: 0;
   width: 220px;
-  height: 100vh;
+  min-height: 100%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -232,6 +233,10 @@ input::placeholder{
   border-left: 3px solid transparent;
   border-bottom: 1px solid rgba(181,175,199,.3);
   transition: .3s;
+}
+
+.ams-sidebar li a:hover{
+  color: #1A53BD;
 }
 
 .ams-sidebar li a.active{
@@ -443,7 +448,7 @@ input::placeholder{
 }
 
 .info-box-content h1{
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .single-info-box:nth-child(4n - 3) .info-box-icon{
@@ -500,5 +505,15 @@ input::placeholder{
   font-size: 16px;
   font-weight: 500;
   color: #fff;
+}
+
+/* ----- Dashboard Charts ----- */
+
+.ams-single-chart{
+  height: 530px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin: 24px 0;
 }
 
