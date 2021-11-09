@@ -242,20 +242,16 @@ input::placeholder{
   margin-right: 5px;
 }
 
-.sidebar-menu li a.has-children::before{
-  position: absolute;
-  content: "\f105";
-  top: 50%;
-  right: 5%;
-  font-size: 18px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  transform: translate(-5%,-50%);
-  transition: .3s;
+.sidebar-menu .nav-expand i{
+ position: absolute;
+ top: 15px;
+ right: 20px;
+ font-size: 18px;
+ transition: .3s;
 }
 
-.sidebar-menu li .has-children.active::before{
-  content: "\f107";
+.sidebar-menu li a.active .nav-expand i{
+  transform: rotate(90deg);
 }
 
 .sidebar-menu .sub-menu{
@@ -294,6 +290,10 @@ input::placeholder{
   background-color: transparent;
   border: none;
   color: #fff;
+}
+
+.sub-menu ul{
+ margin-left: 26px;
 }
 
 /* ----- Dashboard Content ----- */
@@ -363,11 +363,11 @@ input::placeholder{
   line-height: 20px;
 }
 
-.nav-right .nav-item:nth-child(2)::before{
+.nav-right .nav-item:nth-child(3)::before{
   content: "2";
 }
 
-.nav-right .nav-item:nth-child(3)::before{
+.nav-right .nav-item:nth-child(4)::before{
   content: "3";
 }
 
