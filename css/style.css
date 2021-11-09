@@ -214,7 +214,7 @@ input::placeholder{
   position: absolute;
   top: 0;
   left: 0;
-  width: 260px;
+  width: 220px;
   height: 100vh;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
 }
@@ -229,11 +229,13 @@ input::placeholder{
   font-size: 16px;
   color: #B5AFC7;
   padding: 10px 20px;
+  border-left: 3px solid transparent;
   border-bottom: 1px solid rgba(181,175,199,.3);
+  transition: .3s;
 }
 
 .ams-sidebar li a.active{
-  border-left: 3px solid #1A53BD;
+  border-left-color: #1A53BD;
   color: #1A53BD;
   background-color: #EBF0FF;
 }
@@ -258,13 +260,13 @@ input::placeholder{
   position: relative;
   display: none;
   color: #FFFFFF80;
-  background-color: #10193A;
+  background-color: #f1f3f6;
 }
 
 .sidebar-menu .sub-menu::before{
   position: absolute;
   content: "";
-  width: 2px;
+  width: 1px;
   height: 100%;
   left: 24px;
   background-color: #fff;
@@ -273,6 +275,7 @@ input::placeholder{
 .sub-menu li a{
   position: relative;
   margin-left: 30px;
+  border: none;
 }
 
 .sub-menu li a::before{
@@ -281,15 +284,13 @@ input::placeholder{
   left: -5px;
   top: 20px;
   width:20px;
-  height: 2px;
-  background-color:  #FFFFFF80;
+  height: 1px;
+  background-color:  #fff;
 
 }
 
 .sub-menu li a.active{
   background-color: transparent;
-  border: none;
-  color: #fff;
 }
 
 .sub-menu ul{
@@ -300,8 +301,8 @@ input::placeholder{
 
 .dashboard-content {
   position: absolute;
-  left: 260px;
-  width: calc(100% - 260px);
+  left: 220px;
+  width: calc(100% - 220px);
 }
 
 .ams-nav-wpr{
@@ -407,6 +408,11 @@ input::placeholder{
 }
 
 /* ----- Dashboard Boxes ----- */
+
+.ams-main-content-wpr{
+  background-color: #f1f3f6;
+  padding: 24px;
+}
 
 .ams-content-boxes{
   display: grid;

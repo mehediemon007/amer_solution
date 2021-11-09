@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/flag-icons.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
 
     <!--[if lt IE 9]>
@@ -37,7 +34,7 @@
                 <li><a href="#" class="has-children"><i class="fas fa-truck"></i><span>Supplier</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
                     <ul class="sub-menu">
                         <li><a href="#">Supplier List</a></li>
-                        <li><a href="#" class="has-children">Add Supplier</a>
+                        <li><a href="#" class="has-children">Add Supplier<span class="nav-expand"><i class="fas fa-angle-right"></i> </span></a>
                             <ul class="sub-menu">
                                 <li><a href="#">Supplier List</a></li>
                                 <li><a href="#">Add Supplier</a></li>
@@ -45,7 +42,13 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#" class="has-children"><i class="fas fa-truck"></i><span>Product</span><span class="nav-expand"><i class="fas fa-angle-right"></i> </span></a></li>
+                <li><a href="#" class="has-children"><i class="fas fa-truck"></i><span>Product</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Add Category</a></li>
+                        <li><a href="#">Category List</a></li>
+                        <li><a href="#">Add Unit</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -81,7 +84,7 @@
                 <span class="nav-item"><i class="fas fa-search"></i></span>
                 <span class="nav-item"><i class="far fa-bell"></i></span>
                 <span class="nav-item"><i class="fas fa-shopping-cart"></i></span>
-                <div class="ams-admin">
+                <div class="ams-admin">                               
                     <div class="admin-image">
                     <img src="images/admin.jpg" alt="admin">
                     <i class="fas fa-circle"></i>
@@ -95,7 +98,7 @@
         </div>
 
         <!-- Main Dashboard Content -->
-        <div class="ams-main-content-wpr p-4">
+        <div class="ams-main-content-wpr"> 
             <div class="ams-info-boxes ams-content-boxes">
                 <div class="single-info-box bg-blue">
                     <div class="info-box-icon">
@@ -295,8 +298,6 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
