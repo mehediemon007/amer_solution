@@ -14,8 +14,4 @@
 
     'use strict'
 
-    $(function(){
-        $('.selectpicker').selectpicker();
-    });
-
 })(jQuery);
