@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/flag-icons.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
 
     <!--[if lt IE 9]>
@@ -64,6 +67,12 @@
                  </ul>
              </nav>
              <div class="nav-right">
+                 <div class="lang-select-box">
+                    <select class="selectpicker" data-width="fit">
+                        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                        <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                    </select>
+                 </div>
                  <span class="nav-item"><i class="fas fa-search"></i></span>
                  <span class="nav-item"><i class="far fa-bell"></i></span>
                  <span class="nav-item"><i class="fas fa-shopping-cart"></i></span>
@@ -225,6 +234,8 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
