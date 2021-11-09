@@ -251,6 +251,15 @@ input::placeholder{
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   transform: translate(-5%,-50%);
+  transition: .3s;
+}
+
+.sidebar-menu li .has-children.active::before{
+  content: "\f107";
+}
+
+.sidebar-menu .sub-menu{
+  display: none;
 }
 
 /* ----- Dashboard Content ----- */
