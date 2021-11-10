@@ -613,7 +613,7 @@ input::placeholder{
 
 .dataTable th,
 .dataTable td{
-  padding:16px 8px
+  padding:10px;
 }
 
 .dataTable-info-wpr{
@@ -643,6 +643,31 @@ input::placeholder{
 .next{
   border-color:  #B3B6BE !important;
   border-radius: 0 5px 5px 0;
+}
+
+/* ----- Add Customer ----- */
+
+.ams-customer-add-form{
+  padding: 40px 80px;
+}
+
+.ams-customer-add-form .input-fieldset{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 150px;
+}
+
+.ams-input input{
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(221, 221, 221, 0.8);
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.submit-btn{
+  color: #fff;
+  background-color: #243E8B;
 }
 
 /* Footer */
