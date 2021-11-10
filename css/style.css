@@ -539,13 +539,14 @@ input::placeholder{
 .ams-panel-wpr{
   background-color: #fff;
   border-radius: 5px;
+  padding: 0 24px;
 }
 
 .panel-heading{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 0;
   border-bottom: 1px solid #DDDDDD;
 }
 
@@ -568,7 +569,7 @@ input::placeholder{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 16px 0;
 }
 
 .dataTable-length{
@@ -610,19 +611,23 @@ input::placeholder{
   background-color: #243E8B;
 }
 
+.dataTable th,
+.dataTable td{
+  padding:16px 8px
+}
+
 .dataTable-info-wpr{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 24px
+  padding: 40px 0;
 }
 
 .dataTable-pagination ul a{
   display: inline-block;
   padding: 6px 12px;
   color: #B3B6BE;
-  border: 1px solid #B3B6BE;
-  margin-right: -1px;
+  border: 1px solid transparent;
 }
 
 .dataTable-pagination a.active{
@@ -631,10 +636,12 @@ input::placeholder{
 }
 
 .prev{
+  border-color: #B3B6BE !important;
   border-radius: 5px 0px 0px 5px;
 }
 
 .next{
+  border-color:  #B3B6BE !important;
   border-radius: 0 5px 5px 0;
 }
 
