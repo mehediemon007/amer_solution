@@ -564,6 +564,80 @@ input::placeholder{
   border-radius: 5px;
 }
 
+.panel-toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.dataTable-length{
+  font-size: 16px;
+  color: #B5AFC7;
+}
+
+.dataTable-length select{
+  padding: 6px 10px;
+  margin: 0 5px;
+  color: #B5AFC7;
+  border-color: #DDDDDD;
+  outline: none;
+}
+
+.dataTable-filter input{
+  max-width: 200px;
+  height: 35px;
+  padding: 12px;
+  border:1px solid #DDDDDD
+}
+
+.dataTable-filter input::placeholder{
+  font-size: 14px;
+}
+
+.toolbar-item{
+  display: inline-block;
+  color: #243E8B;
+  background: #fff;
+  border: 1px solid rgba(36, 62, 139, 0.5);
+  padding: 6px 8px;
+  margin-right: -1px;
+}
+
+.toolbar-item.active,
+.toolbar-item:hover{
+  color: #fff;
+  background-color: #243E8B;
+}
+
+.dataTable-info-wpr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 24px
+}
+
+.dataTable-pagination ul a{
+  display: inline-block;
+  padding: 6px 12px;
+  color: #B3B6BE;
+  border: 1px solid #B3B6BE;
+  margin-right: -1px;
+}
+
+.dataTable-pagination a.active{
+  color: #fff;
+  background-color: #243E8B;
+}
+
+.prev{
+  border-radius: 5px 0px 0px 5px;
+}
+
+.next{
+  border-radius: 0 5px 5px 0;
+}
+
 /* Footer */
 
 .footer-btn{

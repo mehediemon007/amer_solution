@@ -108,7 +108,7 @@
                         <a href="#" class="panel-item">+ Add New Supplier</a>
                     </div>
                     <div class="panel-body">
-                        <div class="panel-tootbar">
+                        <div class="panel-toolbar">
                             <div class="dataTable-length">
                                  <label for="supplierList-length">Show
                                     <select id="supplierList-length">
@@ -121,14 +121,15 @@
                                  </label>
                             </div>
                             <div class="panel-toolbar-menu btn-group">
-                                 <a href="#" class="toolbar-item">Copy</a>
+                                 <a href="#" class="toolbar-item active">Copy</a>
                                  <a href="#" class="toolbar-item">CSV</a>
                                  <a href="#" class="toolbar-item">Excel</a>
                                  <a href="#" class="toolbar-item">Pdf</a>
                                  <a href="#" class="toolbar-item">Print</a>
                             </div>
                             <div class="dataTable-filter">
-                                <input type="text" placeholder="Search Here">
+                                <label for="supplier-search" class="visually-hidden"></label>
+                                <input type="text" placeholder="Search Here" id="supplier-search">
                             </div>
                         </div>
                         <div id="supplierList">
@@ -179,13 +180,13 @@
                                 </tfoot>
                             </table>
                         </div>
-                        <div>
+                        <div class="dataTable-info-wpr">
                             <div class="dataTable-info" id="supplierList-info">Showing 1 to 10 of 10 entries</div>
                             <div class="dataTable-pagination" id="supplierList-pagination">
                                 <ul class="pagination">
-                                    <li><a href="#">Previous</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">Next</a></li>
+                                    <li><a href="#" class="page-number prev">Previous</a></li>
+                                    <li><a href="#" class="page-number active">1</a></li>
+                                    <li><a href="#" class="page-number next">Next</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -213,6 +214,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/custom-chart.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
