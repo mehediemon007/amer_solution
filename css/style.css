@@ -241,7 +241,7 @@ input::placeholder{
 .ams-sidebar li a{
   position: relative;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   color: #B5AFC7;
   padding: 10px 20px;
   border-left: 3px solid transparent;
@@ -648,13 +648,20 @@ input::placeholder{
 /* ----- Add Customer ----- */
 
 .ams-customer-add-form{
-  padding: 40px 80px;
+  padding: 40px 60px;
 }
 
-.ams-customer-add-form .input-fieldset{
+.ams-customer-add-form .input-group{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-column-gap: 150px;
+}
+
+.ams-input{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  text-align: right;
+  grid-column-gap: 30px;
 }
 
 .ams-input input{
@@ -668,6 +675,7 @@ input::placeholder{
 .submit-btn{
   color: #fff;
   background-color: #243E8B;
+  clear: both;
 }
 
 /* Footer */
