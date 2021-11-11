@@ -245,7 +245,6 @@ input::placeholder{
   color: #B5AFC7;
   padding: 10px 20px;
   border-left: 3px solid transparent;
-  border-bottom: 1px solid rgba(181,175,199,.3);
   transition: .3s;
 }
 
@@ -280,6 +279,7 @@ input::placeholder{
   display: none;
   color: #FFFFFF80;
   background-color: #f1f3f6;
+  transform: .3s linear;
 }
 
 .sidebar-menu .sub-menu::before{
@@ -444,7 +444,7 @@ input::placeholder{
   grid-template-columns: 75px 1fr;
   grid-column-gap: 30px;
   align-items: center;
-  padding: 40px 24px;
+  padding: 32px 24px;
   border-radius: 5px;
   margin-bottom: 24px;
 }
@@ -709,7 +709,7 @@ input::placeholder{
 }
 
 .product-content p{
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .product-code span{

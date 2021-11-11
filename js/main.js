@@ -20,7 +20,7 @@
         toggle = $('.nav-toggle');
 
     dropDown.click(function(){
-        $(this).next('.sub-menu').slideToggle();
+        $(this).next('.sub-menu').slideToggle("fast");
         $(this).toggleClass('active');
     })
 
