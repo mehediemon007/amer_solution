@@ -781,34 +781,12 @@ a:focus{
 }
 
 /* ----- Dropdown ----- */
+
 .dropdown {
   position: relative;
-
-  /** Make it fit tightly around it's children */
-
 }
 
-.dropdown .dropdown-menu {
-  position: absolute;
-
-  /**
-   * Set the top of the dropdown menu to be positioned 100%
-   * from the top of the container, and aligned to the left.
-   */
-  top: 100%;
-  left: 0;
-
-  /** Allow no empty space between this and .dropdown */
-  margin: 0;
-}
-
-/**
-* Apply these styles to .dropdown-menu when user hovers
-* over .dropdown
-*/
 .dropdown:hover .dropdown-menu {
-
-  /** Show dropdown menu */
   display: block;
 }
 
@@ -820,14 +798,32 @@ a:focus{
 .dropdown .dropdown-menu {
   position: absolute;
   top: 100%;
+  right: 0;
   display: none;
-  min-width: 100%;
   border-radius: 0;
-  margin-top: 2px;
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.dropdown:hover .dropdown-menu::before{
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: 50%;
+  width:0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent; 
+  transform: rotate(-45deg);   
+  mix-blend-mode: multiple;
 }
 
 .dropdown button {
