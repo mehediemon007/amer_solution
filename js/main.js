@@ -28,6 +28,9 @@
         sidebar.toggleClass('active')
     })
 
-    $('#supplier-table').DataTable();
+    $(document).ready(function() {
+        $("#supplier-table").DataTable();
+      });
+      
 
 })(jQuery);
