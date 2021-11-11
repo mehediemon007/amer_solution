@@ -463,10 +463,6 @@ input::placeholder{
   color: #fff;
 }
 
-.info-box-content h1{
-  font-size: 50px;
-}
-
 .single-info-box:nth-child(4n - 3) .info-box-icon{
   color:#243E8B
 }
@@ -611,9 +607,27 @@ input::placeholder{
   background-color: #243E8B;
 }
 
-.dataTable th,
+.dataTable{
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+}
+
+.dataTable th{
+  min-width: 50px;
+  padding:8px 10px;
+  position: relative;
+  background-color: #f1f3f6;
+}
+
+.dataTable th::after{
+  position: absolute;
+  color: #000;
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0dc";
+  margin-left: 10px
+}
+
 .dataTable td{
-  padding:10px;
+  padding: 8px 10px;
 }
 
 .dataTable-info-wpr{
