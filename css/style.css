@@ -674,6 +674,10 @@ table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after{
   color: #B3B6BE !important;
 }
 
+a:focus{
+  box-shadow: none !important;
+}
+
 .prev{
   border-color: #B3B6BE !important;
   border-radius: 5px 0px 0px 5px;
