@@ -55,3 +55,7 @@
         }
         }
     }
+
+    // Text Editor
+
+    CKEDITOR.replace( 'textbox' );

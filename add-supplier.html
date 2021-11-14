@@ -11,10 +11,11 @@
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
+
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -137,8 +138,12 @@
                                         <input type="text" id="note" placeholder="Write Note">
                                     </fieldset>
                                 </div>
+                                <fieldset class="ams-input input-verticle mt-40">
+                                    <label for="textbox">Message</label>
+                                    <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+                                </fieldset>
                                 <fieldset class="text-end">
-                                    <button type="submit" class="submit-btn btn me-5">Save</button>
+                                    <button type="submit" class="submit-btn btn mt-4">Save</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -162,13 +167,8 @@
     
     <!-- Js files -->
     <script src="js/modernizr-3.5.0.min.js"></script>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/custom-chart.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/dataTables.bootstrap5.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
