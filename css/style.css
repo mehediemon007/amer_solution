@@ -222,12 +222,7 @@ input::placeholder{
 
 /*----- Sidebar -----*/
 
-.ams-sidebar {
-  position:relative;
-  min-height: 100%;
-}
-
-.ams-sidebar .sidebar-nav{
+.ams-sidebar{
   position: absolute;
   top: 0;
   left: 0;
@@ -235,6 +230,10 @@ input::placeholder{
   height: 100%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
   transition: .3s;
+}
+
+.ams-sidebar.active{
+  width: 60px;
 }
 
 /* .ams-sidebar.active{
@@ -251,6 +250,7 @@ input::placeholder{
   font-size: 14px;
   color: #B5AFC7;
   padding: 10px 20px;
+  margin-bottom:5px;
   border-left: 3px solid transparent;
   transition: .3s;
 }
@@ -277,6 +277,10 @@ input::placeholder{
  transition: .3s;
 }
 
+.sub-menu .nav-expand i{
+  top: 7px;
+}
+
 .sidebar-menu li a.active .nav-expand i{
   transform: rotate(90deg);
 }
@@ -300,6 +304,7 @@ input::placeholder{
 
 .sub-menu li a{
   position: relative;
+  padding: 5px 20px;
   margin-left: 30px;
   border: none;
 }
@@ -308,7 +313,7 @@ input::placeholder{
   position: absolute;
   content: "";
   left: -5px;
-  top: 20px;
+  top: 15px;
   width:20px;
   height: 1px;
   background-color:  #fff;
@@ -750,6 +755,11 @@ a:focus{
   grid-template-columns: repeat(2,1fr);
 }
 
+.input-group.input-verticle{
+  grid-column-gap: 100px;
+  padding: 0 50px;
+}
+
 .ams-input{
   position: relative;
   display: grid;
@@ -757,6 +767,16 @@ a:focus{
   align-items: center;
   text-align: right;
   grid-column-gap: 30px;
+}
+
+.input-verticle{
+  grid-template-columns: 1fr;
+  grid-gap: 16px 30px;
+  text-align: left;
+}
+
+.input-verticle .add-input{
+  top: 38px !important;
 }
 
 .ams-input .add-input{
@@ -778,6 +798,11 @@ a:focus{
   border: 1px solid rgba(221, 221, 221, 0.8);
   padding: 16px;
   margin-bottom: 14px;
+}
+
+.add-btn{
+  background-color: #00C908;
+  box-shadow: 0px 4px 20px rgba(0, 201, 8, 0.7);
 }
 
 .submit-btn{
