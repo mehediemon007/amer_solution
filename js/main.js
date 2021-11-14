@@ -31,6 +31,27 @@
     $(document).ready(function() {
         $("#supplier-table").DataTable();
       });
-      
 
 })(jQuery);
+
+
+   function langSelect(){
+       document.getElementById("lang-dropdown").classList.toggle("show");
+   }
+
+    function actionSelect() {
+        document.getElementById("action-dropdown").classList.toggle("show");
+    }
+    
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }

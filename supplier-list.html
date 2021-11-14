@@ -88,16 +88,12 @@
                 </ul>
             </nav>
             <div class="nav-right">
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <div class="lang-dropdown">
+                    <button onClick="langSelect()" class="dropbtn">English <i class="fas fa-caret-down ms-2"></i></button>
+                    <div id="lang-dropdown" class="dropdown-content">
+                      <a href="#">French</a>
+                      <a href="#">Dutch</a>
+                    </div>
                 </div>
                 <span class="nav-item"><i class="fas fa-search"></i></span>
                 <span class="nav-item"><i class="far fa-bell"></i></span>
@@ -193,13 +189,12 @@
                                         <td>100</td>
                                         <td>Unpaid</td>
                                         <td>
-                                            <div class="dropdown">
-                                                <button class="more">Actions</button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#home">Edit</a></li>
-                                                    <li><a href="#about">Delete</a></li>
-                                                    <li><a h ref="#contact">Add</a> </li>
-                                                </ul>
+                                            <div class="action-dropdown">
+                                                <button onclick="actionSelect()" class="dropbtn">Action <i class="fas fa-caret-down"></i></button>
+                                                <div id="action-dropdown" class="dropdown-content">
+                                                  <a href="#">Edit</a>
+                                                  <a href="#">Delete</a>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -285,8 +280,6 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/custom-chart.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <script src="js/main.js"></script>
