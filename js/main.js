@@ -32,6 +32,11 @@
         $("#supplier-table").DataTable();
       });
 
+    $(document).ready(function() {
+        $('.unit-select-box').select2();
+    });
+    
+
 })(jQuery);
 
 

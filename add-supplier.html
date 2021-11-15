@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
 
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
@@ -137,7 +138,7 @@
                                         <label for="note">Note :</label>
                                         <input type="text" id="note" placeholder="Write Note">
                                     </fieldset>
-                                    <fieldset class="ams-input input-verticle">
+                                    <!-- <fieldset class="ams-input input-verticle">
                                         <label for="select-box">Unit</label>
                                         <div class="select-box" id="select-box">
                                           <div class="options-container">
@@ -200,6 +201,15 @@
                                             <input type="text" placeholder="Start Typing..." />
                                           </div>
                                         </div>
+                                    </fieldset> -->
+                                    <fieldset class="ams-input input-verticle">
+                                        <label for="unit-select-box">Unit</label>
+                                        <select class="unit-select-box" name="state">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
                                     </fieldset>
                                 </div>
                                 <fieldset class="ams-input input-verticle mt-40">
@@ -233,6 +243,7 @@
     <script src="js/modernizr-3.5.0.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
