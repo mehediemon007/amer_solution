@@ -66,12 +66,12 @@
     var path = window.location.pathname;
     var page = path.split("/").pop();
     if(page=='add-supplier.html'){
-        CKEDITOR.replace( 'textbox' );
+        CKEDITOR.replace( 'textbox' );    
     }
     
- 
+    
     // Select Box
- 
+
     //  const selected = document.querySelector(".selected");
     //  const optionsContainer = document.querySelector(".options-container");
     //  const searchBox = document.querySelector(".search-box input");
