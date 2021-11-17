@@ -39,14 +39,15 @@
 
 })(jQuery);
 
+function langSelect(){
+    document.getElementById("lang-dropdown").classList.toggle("show");
+}
+
+function actionSelect() {
+    document.getElementById("action-dropdown").classList.toggle("show");
+}
+
 (function(){
-    function langSelect(){
-        document.getElementById("lang-dropdown").classList.toggle("show");
-    }
- 
-    function actionSelect() {
-        document.getElementById("action-dropdown").classList.toggle("show");
-    }
      
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
