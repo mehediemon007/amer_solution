@@ -229,16 +229,14 @@ input::placeholder{
   width: 220px;
   height: 100%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
-  transition: .3s;
+  transition: .2s;
+  background-color: red;
 }
 
 .ams-sidebar.active{
   width: 60px;
 }
 
-/* .ams-sidebar.active{
-  width: 60px;
-} */
 
 .ams-sidebar .brand-logo{
   padding: 32px 18px;
@@ -336,6 +334,11 @@ input::placeholder{
   width: calc(100% - 220px);
 }
 
+.ams-sidebar.active + .ams-main-content{
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
 .ams-nav-wpr{
   height: 80px;
   display: flex;
@@ -404,9 +407,20 @@ input::placeholder{
   content: "3";
 }
 
+.nav-right .nav-item:last-child:before{
+  content: none;
+}
+
 .nav-right .nav-item i{
   font-size: 20px;
   color: #B5AFC7;
+}
+
+.nav-item:last-child i{
+  display: none;
+  font-size: 18px;
+  color: #243E8B;
+  margin-left: 5px;
 }
 
 .ams-admin{
@@ -540,6 +554,10 @@ input::placeholder{
   padding: 24px 18px;
   border-radius: 5px;
   margin-bottom: 24px;
+}
+
+.single-stat-box .stat-box-heading{
+  margin-bottom: 20px;
 }
 
 .single-stat-box .stat-box-heading,
