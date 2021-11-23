@@ -73,14 +73,49 @@
     }
 }
 
+/* Layout: Max Width 1024px */
+@media only screen and (max-width:1024px){
+    .ams-customer-add-form .input-group{
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+}
+
+/* Layout: Max Width 991px */
+@media only screen and (max-width:991px){
+    .ams-customer-add-form .input-group.input-verticle{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Layout: Max Width 767px */
+@media only screen and (max-width:767px){
+
+    .ams-customer-add-form .input-group.input-verticle{
+        grid-template-columns: 1fr
+    }
+}
+
 /* Layout: Max Width 576px */
 @media only screen and (max-width:576px){
     .nav-right > *{
         display: none;
     }
 
-    .nav-right .ams-admin{
+    .nav-right .ams-admin,
+    .nav-right span:last-child{
         display: flex !important;
+    }
+
+    .ams-customer-add-form{
+        padding: 40px 0;
+    }
+}
+
+/* Layout: Max Width 480px */
+@media only screen and (max-width:480px){
+    .add-btn{
+        padding: 7px 14px;
     }
 }
 
@@ -89,5 +124,16 @@
     .admin-details{
         display: none;
     }
+
+    .product-btns a{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+}
+
+/* Layout: Max Width 320px */
+@media only screen and (max-width:320px){
+    
 }
 
