@@ -29,7 +29,10 @@
     })
 
     $(document).ready(function() {
-        $("#supplier-table").DataTable();
+        $("#supplier-table").DataTable({
+            responsive: true,
+            scrollX: true
+        });
       });
 
     $(document).ready(function() {

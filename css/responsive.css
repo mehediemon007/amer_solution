@@ -12,6 +12,14 @@
  *
  **/
 
+ /* Layout: Max 1600px  */
+@media only screen and (max-width: 1600px) {
+    .ams-admin{
+        margin-right: 0;
+    }
+}
+
+
 /* Layout: Max 1400px  */
 @media only screen and (max-width: 1400px) {
 
@@ -26,17 +34,30 @@
         left: 0;
     }
 
-    .ams-admin{
-        margin-right: 0;
-    }
-
     .ams-main-content{
         width: 100%;
         left: 0;
     }
+
+    #supplierList{
+        display: block;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        white-space: nowrap;
+    }
 }
 
-/* Layout: Max 1099px */
+/* Layout: Max Width 1399px */
+@media only screen and (max-width:1300px){
+    #supplierList-2{
+        display: block;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        white-space: nowrap;
+    }
+}
+
+/* Layout: Max Width 1099px */
 @media only screen and (max-width:1099px){
 
     .nav-item:last-child i{
@@ -86,6 +107,59 @@
     .ams-customer-add-form .input-group.input-verticle{
         grid-template-columns: repeat(2,1fr);
     }
+
+    #supplierList{
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    #supplierList thead{
+        display: none;
+    }
+
+    #supplierList ,
+    #supplierList tbody,
+    #supplierList tr,
+    #supplierList td{
+        display: block;
+        width: 100%;
+    }
+
+    #supplierList tr{
+        margin-bottom: 32px;
+    }
+
+    #supplierList tr td{
+        position: relative;
+        min-height: 40px;
+        text-align: right;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    #supplierList tr td:last-child{
+        border-bottom: none;
+    }
+
+    #supplierList td::before{
+        position: absolute;
+        content: attr(data-label);
+        left: 0;
+        width: 50%;
+        padding-left: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .action-dropdown .dropdown-content{
+        left: auto;
+        right: 0;
+    }
+
+    .input-double{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /* Layout: Max Width 767px */
@@ -93,6 +167,10 @@
 
     .ams-customer-add-form .input-group.input-verticle{
         grid-template-columns: 1fr
+    }
+
+    .panel-toolbar-menu{
+        display: none;
     }
 }
 
@@ -117,6 +195,13 @@
     .add-btn{
         padding: 7px 14px;
     }
+
+    .dataTable-info-wpr,
+    .panel-toolbar{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 
 /* Layout: Max Width 380px */
@@ -129,6 +214,12 @@
         font-size: 15px;
         padding: 5px 10px;
         margin-top: 5px;
+    }
+
+    .panel-heading{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 }
 

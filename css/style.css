@@ -468,8 +468,6 @@ input::placeholder{
 }
 
 .dropdown-content {
-  visibility: hidden;
-  opacity: 0;
   position: absolute;
   background-color: #fff;
   min-width: 160px;
@@ -477,6 +475,9 @@ input::placeholder{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   transform: translateY(30%);
   transition: .2s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
 }
 
 .dropdown-content a {
@@ -762,6 +763,8 @@ a:focus{
   border-color:  #B3B6BE !important;
   border-radius: 0 5px 5px 0;
 }
+
+
 
 
 /* ----- Add Customer ----- */
@@ -1080,6 +1083,11 @@ a:focus{
 
 .select2-dropdown{
   border-color: rgba(221, 221, 221, 0.8);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+  top: 65%;
+  left: 30%;
 }
 
 
