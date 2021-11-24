@@ -217,6 +217,10 @@
         align-items: flex-start;
         gap: 20px;
     }
+
+    .stack-chart{
+        height: 450px;
+    }
 }
 
 /* Layout: Max Width 380px */
@@ -235,6 +239,10 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+    }
+
+    .donat-chart{
+        height: 450px;
     }
 }
 

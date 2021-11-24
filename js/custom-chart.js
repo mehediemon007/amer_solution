@@ -37,7 +37,43 @@ var stackedOptions = {
     legend: {
         position: "top",
         offsetX: 50
-    }
+    },
+    responsive: [
+      {
+        breakpoint: 769,
+        options: {
+          plotOptions: {
+            bar: {
+              borderRadius: 14
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 577,
+        options: {
+          plotOptions: {
+            bar: {
+              borderRadius: 10
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 481,
+        options: {
+          chart:{
+              height: 350
+          },
+          plotOptions: {
+            bar: {
+              columnWidth: '50',
+              borderRadius: 5
+            }
+          }
+        }
+      }
+    ]
 
   }
   
@@ -76,8 +112,18 @@ var stackedOptions = {
         },
         hollow: {
           margin: 15,
-          size: "60%"
+          size: "60%",
         },
+        responsive: [
+          {
+            breakpoint: 381,
+              options: {
+                chart:{
+                  
+                }
+              }
+          },
+        ]   
       }
     },
     labels: ["Apples", "Oranges", "Bananas", "Berries"],
@@ -99,7 +145,17 @@ var stackedOptions = {
     labels: ["Comments", "Replies", "Shares"],
     legend: {
       position: 'bottom'
-    }
+    },
+    responsive: [
+      {
+        breakpoint: 490,
+          options: {
+            chart:{
+                height: 350
+            }
+          }
+      },
+    ]  
   }
   
   var donutChart = new ApexCharts(document.querySelector("#donut-chart"), donutOptions);
@@ -142,7 +198,8 @@ var stackedOptions = {
         "Mon,20",
         "Mon,21",
       ]
-    }
+    },
+    
   }
   
   var horizonBarChart = new ApexCharts(document.querySelector("#horizonbar-chart"), horizonOptions);
@@ -161,7 +218,17 @@ var stackedOptions = {
     labels: ["Food 70%", "Rent 13%", "Others 17%"],
     legend: {
       position: 'bottom'
-    }
+    },
+    responsive: [
+      {
+        breakpoint: 490,
+          options: {
+            chart:{
+                height: 350
+            }
+          }
+      },
+    ]   
   }
   
   var donutChart2 = new ApexCharts(document.querySelector("#donut-chart-2"), donut2Options);
@@ -216,7 +283,7 @@ var stackedOptions = {
 
   // Bar Chart
 
-  var horizonOptions = {
+  var barOptions = {
     colors:["#243E8B"],
     series: [
       {
@@ -241,10 +308,22 @@ var stackedOptions = {
     },
     xaxis: {
       categories: ["5/12","7/12","9/12","11/12","13/12","15/12","17/12","19/12","21/12","23/12"]
-    },   
+    },
+    responsive: [
+      {
+        breakpoint: 381,
+        options: {
+          plotOptions: {
+            bar: {
+              borderRadius: 10
+            }
+          }
+        }
+      },
+    ]   
   }
   
-  var barChart = new ApexCharts(document.querySelector("#bar-chart"), horizonOptions);
+  var barChart = new ApexCharts(document.querySelector("#bar-chart"), barOptions);
   barChart.render();
 
 
