@@ -45,6 +45,16 @@
         overflow-y:hidden;
         white-space: nowrap;
     }
+
+    .ams-sidebar.active .sidebar-menu .nav-expand i{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .ams-sidebar.active .sidebar-menu .sub-menu{
+        position: relative;
+        left: 0;
+      }
 }
 
 /* Layout: Max Width 1399px */
