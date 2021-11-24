@@ -56,7 +56,8 @@
         opacity: 1;
     }
 
-    .ams-sidebar.active .sidebar-menu .sub-menu{
+    .ams-sidebar.active .sidebar-menu .sub-menu,
+    .ams-sidebar.active .sidebar-menu .sub-menu ul{
         position: relative;
         left: 0;
     }
