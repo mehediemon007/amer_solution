@@ -73,7 +73,11 @@ var stackedOptions = {
               return "80%";
             }
           }
-        }
+        },
+        hollow: {
+          margin: 15,
+          size: "60%"
+        },
       }
     },
     labels: ["Apples", "Oranges", "Bananas", "Berries"],
@@ -192,9 +196,6 @@ var stackedOptions = {
       toolbar: {
         show: false
       }
-    },
-    title: {
-      text: "Radar Chart - Multi Series"
     },
     stroke: {
       width: 0

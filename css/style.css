@@ -649,11 +649,15 @@ input::placeholder{
 /* ----- Dashboard Charts ----- */
 
 .ams-single-chart{
-  height: 530px;
+  height: 600px;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   margin-bottom: 24px;
+}
+
+.chart-heading{
+ padding: 24px;
 }
 
 /* ----- Supplier List ----- */
