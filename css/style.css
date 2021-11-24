@@ -340,7 +340,7 @@ input::placeholder{
 }
 
 .ams-nav-wpr{
-  height: 80px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -360,12 +360,12 @@ input::placeholder{
 
 .main-nav li a{
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #243E8B;
   border: 1px solid #243E8B;
   border-radius: 5px;
-  padding: 6px 18px;
+  padding: 5px 10px;
   margin-right: 5px;
 }
 
