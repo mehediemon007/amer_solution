@@ -333,13 +333,14 @@ input::placeholder{
 
 .ams-sidebar.active .sidebar-menu .sub-menu{
   position: absolute;
-  left: 95%;
+  top: 0;
+  left: 97%;
   z-index: 1;
   border-radius: 0 5px 5px 0;
 }
 
 .sidebar-menu .sub-menu ul{
-  left: 777%;
+  left: 77% !important;
 }
 
 .sidebar-menu .sub-menu::before{
