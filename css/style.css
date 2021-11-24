@@ -339,8 +339,8 @@ input::placeholder{
   border-radius: 0 5px 5px 0;
 }
 
-.sidebar-menu .sub-menu ul{
-  left: 77% !important;
+.ams-sidebar.active .sidebar-menu .sub-menu ul{
+  left: 77%;
 }
 
 .sidebar-menu .sub-menu::before{
