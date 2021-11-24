@@ -323,12 +323,13 @@ input::placeholder{
   display: none;
   color: #f4f4f5;
   background-color: #f1f3f6;
+  padding-left: 30px;
   transform: .3s linear;
 }
 
 .ams-sidebar.active .sidebar-menu .sub-menu{
   position: absolute;
-  left: 100%;
+  left: 95%;
   z-index: 1;
   border-radius: 0 5px 5px 0;
 }
@@ -336,16 +337,15 @@ input::placeholder{
 .sidebar-menu .sub-menu::before{
   position: absolute;
   content: "";
-  width: 1px;
+  width:1px;
   height: 100%;
   left: 24px;
-  background-color: #fff;
+  background-color: #777;
 }
 
 .sub-menu li a{
   position: relative;
   padding: 10px 20px;
-  margin-left: 30px;
   border: none;
   white-space: nowrap;
   color: #777;
@@ -358,7 +358,7 @@ input::placeholder{
   top: 20px;
   width:20px;
   height: 1px;
-  background-color:  #fff;
+  background-color:  #777;
 
 }
 

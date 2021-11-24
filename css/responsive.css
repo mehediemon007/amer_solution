@@ -26,7 +26,9 @@
     .ams-sidebar{
         position: fixed;
         left: -220px;
+        top: 65px;
         z-index: 1;
+        transition: .3s;
     }
 
     .ams-sidebar.active{
@@ -34,10 +36,13 @@
         left: 0;
     }
 
-    .ams-main-content{
+    .ams-main-content,
+    .ams-sidebar.active + .ams-main-content{
         width: 100%;
         left: 0;
     }
+
+    
 
     #supplierList{
         display: block;
@@ -54,7 +59,7 @@
     .ams-sidebar.active .sidebar-menu .sub-menu{
         position: relative;
         left: 0;
-      }
+    }
 }
 
 /* Layout: Max Width 1399px */
