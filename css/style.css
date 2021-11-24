@@ -376,7 +376,7 @@ input::placeholder{
   position: absolute;
   left: 220px;
   width: calc(100% - 220px);
-  transition: width .3s;
+  transition: all .3s;
 }
 
 .ams-sidebar.active + .ams-main-content{
