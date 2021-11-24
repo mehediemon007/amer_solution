@@ -338,6 +338,10 @@ input::placeholder{
   border-radius: 0 5px 5px 0;
 }
 
+.sidebar-menu .sub-menu ul{
+  left: 777%;
+}
+
 .sidebar-menu .sub-menu::before{
   position: absolute;
   content: "";

@@ -11,18 +11,24 @@ var stackedOptions = {
       height:500,
 
     },
+    plotOptions: {
+      bar: {
+        columnWidth: '30',
+        borderRadius: 17
+      }
+    },
     series: [
         {
           name: "PRODUCT A",
-          data: [44, 55, 41, 67, 22, 43]
+          data: [64, 55, 81, 67, 72, 53, 67, 87, 90, 84]
         },
         {
           name: "PRODUCT B",
-          data: [13, 23, 20, 8, 13, 27]
+          data: [63, 73, 54, 88, 73, 67, 87, 55, 65, 93]
         },
         {
           name: "PRODUCT C",
-          data: [11, 17, 15, 15, 21, 14]
+          data: [90, 70, 85, 75, 51, 84, 56, 77, 88, 92]
         }
       ],
     xaxis: {
@@ -31,7 +37,8 @@ var stackedOptions = {
     legend: {
         position: "top",
         offsetX: 50
-      }
+    }
+
   }
   
   var stackedChart = new ApexCharts(document.querySelector("#stackedcol-chart"), stackedOptions);
@@ -86,6 +93,9 @@ var stackedOptions = {
 
     },
     labels: ["Comments", "Replies", "Shares"],
+    legend: {
+      position: 'bottom'
+    }
   }
   
   var donutChart = new ApexCharts(document.querySelector("#donut-chart"), donutOptions);
@@ -94,10 +104,11 @@ var stackedOptions = {
   // Horizontal Bar Chart
 
   var horizonOptions = {
+    colors:["#FFC700"],
     series: [
       {
         name: "basic",
-        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+        data: [400, 430, 448, 470, 540, 580, 1100]
       }
     ],
     chart: {
@@ -109,7 +120,9 @@ var stackedOptions = {
     },
     plotOptions: {
       bar: {
-        horizontal: true
+        horizontal: true,
+        barHeight: '20',
+        borderRadius: 5
       }
     },
     dataLabels: {
@@ -117,16 +130,13 @@ var stackedOptions = {
     },
     xaxis: {
       categories: [
-        "South Korea",
-        "Canada",
-        "United Kingdom",
-        "Netherlands",
-        "Italy",
-        "France",
-        "Japan",
-        "United States",
-        "China",
-        "Germany"
+        "Mon,11",
+        "Mon,14",
+        "Mon,15",
+        "Mon,17",
+        "Mon,18",
+        "Mon,20",
+        "Mon,21",
       ]
     }
   }
@@ -144,7 +154,10 @@ var stackedOptions = {
       height:500,
 
     },
-    labels: ["Food 70%", "Rent 13", "Others 17%"],
+    labels: ["Food 70%", "Rent 13%", "Others 17%"],
+    legend: {
+      position: 'bottom'
+    }
   }
   
   var donutChart2 = new ApexCharts(document.querySelector("#donut-chart-2"), donut2Options);
@@ -203,10 +216,11 @@ var stackedOptions = {
   // Bar Chart
 
   var horizonOptions = {
+    colors:["#243E8B"],
     series: [
       {
         name: "basic",
-        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+        data: [800, 730, 448, 470, 740, 580, 890, 1100, 1200, 1380]
       }
     ],
     chart: {
@@ -219,20 +233,14 @@ var stackedOptions = {
     dataLabels: {
       enabled: false
     },
+    plotOptions: {
+      bar: {
+        borderRadius: 17
+      }
+    },
     xaxis: {
-      categories: [
-        "South Korea",
-        "Canada",
-        "United Kingdom",
-        "Netherlands",
-        "Italy",
-        "France",
-        "Japan",
-        "United States",
-        "China",
-        "Germany"
-      ]
-    }
+      categories: ["5/12","7/12","9/12","11/12","13/12","15/12","17/12","19/12","21/12","23/12"]
+    },   
   }
   
   var barChart = new ApexCharts(document.querySelector("#bar-chart"), horizonOptions);
@@ -240,3 +248,4 @@ var stackedOptions = {
 
 
 
+                    
