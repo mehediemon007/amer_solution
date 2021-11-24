@@ -44,7 +44,7 @@ var stackedOptions = {
         options: {
           plotOptions: {
             bar: {
-              borderRadius: 14
+              borderRadius: 12
             }
           }
         }
@@ -54,7 +54,7 @@ var stackedOptions = {
         options: {
           plotOptions: {
             bar: {
-              borderRadius: 10
+              borderRadius: 9
             }
           }
         }
@@ -315,7 +315,7 @@ var stackedOptions = {
         options: {
           plotOptions: {
             bar: {
-              borderRadius: 10
+              borderRadius: 9
             }
           }
         }
