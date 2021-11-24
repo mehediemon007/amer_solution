@@ -113,20 +113,29 @@ var stackedOptions = {
         hollow: {
           margin: 15,
           size: "60%",
-        },
-        responsive: [
-          {
-            breakpoint: 381,
-              options: {
-                chart:{
-                  
-                }
-              }
-          },
-        ]   
+        }, 
       }
     },
     labels: ["Apples", "Oranges", "Bananas", "Berries"],
+    responsive: [
+      {
+        breakpoint: 381,
+          options: {
+            plotOptions:{
+              radialBar:{
+                hollow: {
+                  margin: 15,
+                },
+                track:{
+                  strokeWidth: '50%',
+                  startAngle: undefined,
+                  endAngle: 60,
+                }
+              }
+            }
+          }
+      },
+    ]  
   }
   
   var radialChart = new ApexCharts(document.querySelector("#radial-chart"), radialOptions);
@@ -316,6 +325,16 @@ var stackedOptions = {
           plotOptions: {
             bar: {
               borderRadius: 9
+            }
+          }
+        }
+      },
+      {
+        breakpoint: 481,
+        options: {
+          plotOptions: {
+            bar: {
+              borderRadius: 12
             }
           }
         }
