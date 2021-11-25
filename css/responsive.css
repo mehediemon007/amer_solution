@@ -21,7 +21,7 @@
 
 
 /* Layout: Max 1400px  */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
 
     .ams-sidebar{
         position: fixed;
@@ -34,6 +34,10 @@
     .ams-sidebar.active{
         width: 220px;
         left: 0;
+    }
+
+    .ams-sidebar .sidebar-menu{
+        margin-top: -1px;
     }
 
     .ams-main-content,
@@ -221,6 +225,15 @@
 
     .stack-chart{
         height: 450px;
+    }
+
+    .ams-input{
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .ams-input .add-input{
+        top: 24px;
     }
 }
 
