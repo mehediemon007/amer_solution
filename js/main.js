@@ -51,10 +51,18 @@ function actionSelect() {
 }
 
 
+// Small Screen Stack Menu
+
+function stackMenu(){
+    document.querySelector(".main-nav").classList.toggle("move");
+}
+
+document.querySelector(".ams-admin").addEventListener("click", () => {
+    document.getElementById("profile-dropdown").classList.toggle("show");
+})
+
 (function(){
 
-    var menuStack = document.querySelector(".menu-stack");
-     
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -76,20 +84,6 @@ function actionSelect() {
         CKEDITOR.replace( 'textbox' );    
     }
 
-    // Small Screen Stack Menu
-
-    menuStack.addEventListener("click",()=>{
-
-        document.querySelector(".main-nav").classList.toggle("move");
-    })
-
-    // Profile Dropdown
-    var admin = document.querySelector(".ams-admin");
-
-    admin.onclick = function(){
-        document.querySelector("#profile-dropdown").classList.toggle("show");
-        console.log(admin)
-    }
 
     // Sidebar fixed
 
