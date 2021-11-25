@@ -17,6 +17,14 @@
     .ams-admin{
         margin-right: 0;
     }
+
+    .single-info-box{
+        padding: 24px 20px;
+    }
+
+    .info-box-content h1{
+        font-size: 36px;
+    }
 }
 
 
