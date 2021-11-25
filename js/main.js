@@ -53,18 +53,20 @@ function actionSelect() {
 
 // Small Screen Stack Menu
 
-function stackMenu(){
-    document.querySelector(".main-nav").classList.toggle("move");
-}
-
-document.querySelector(".ams-admin").addEventListener("click", () => {
+function profileSelect(){
     document.getElementById("profile-dropdown").classList.toggle("show");
-})
+}
 
 (function(){
 
+    var stackMenu = document.querySelector(".menu-stack");
+
+    stackMenu.addEventListener("click", () => {
+        document.querySelector(".main-nav").classList.toggle("move");
+    })
+
     window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
+        if ((!event.target.matches('.dropbtn')) && (!event.taget.matches(".ams-admin"))) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
