@@ -80,6 +80,45 @@ var stackedOptions = {
   var stackedChart = new ApexCharts(document.querySelector("#stackedcol-chart"), stackedOptions);
   stackedChart.render();
 
+  // Line Chart
+
+  var lineOptions = {
+
+    colors:["#F48020"],
+    series: [
+      {
+        name: "Product",
+        data: [20, 5, 50, 90, 20, 80, 30, 91, 80]
+      }
+    ],
+    chart: {
+      height: 500,
+      type: "line",
+      toolbar: {
+        show: false
+      },
+    },
+    grid: {
+      
+    },
+    xaxis: {
+      categories: [
+        "",
+        "20K",
+        "40K",
+        "60K",
+        "80K",
+        "100K",
+        "140K",
+        "160K",
+        "200K"
+      ]
+    }
+  }
+
+  var lineChart = new ApexCharts(document.querySelector("#line-chart"), lineOptions);
+  lineChart.render();
+
   // Radial Chart
 
   var radialOptions = {
@@ -95,6 +134,7 @@ var stackedOptions = {
     },
     plotOptions: {
       radialBar: {
+        customScale: 0.8,
         dataLabels: {
           name: {
             fontSize: "22px"
@@ -113,7 +153,7 @@ var stackedOptions = {
         hollow: {
           margin: 15,
           size: "60%",
-        }, 
+        } 
       }
     },
     labels: ["Apples", "Oranges", "Bananas", "Berries"],

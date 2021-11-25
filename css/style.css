@@ -586,19 +586,19 @@ input::placeholder{
   color: #fff;
 }
 
-.single-info-box:nth-child(4n - 3) .info-box-icon{
-  color:#243E8B
+.ams-info-boxes div[class^="col"]:nth-child(4n - 3) .info-box-icon{
+  color:#243E8B;
 }
 
-.single-info-box:nth-child(4n - 2) .info-box-icon{
+.ams-info-boxes div[class^="col"]:nth-child(4n - 2) .info-box-icon{
   color:#E54454
 }
 
-.single-info-box:nth-child(4n - 1) .info-box-icon{
+.ams-info-boxes div[class^="col"]:nth-child(4n - 1) .info-box-icon{
   color:#F48020
 }
 
-.single-info-box:nth-child(4n) .info-box-icon{
+.ams-info-boxes div[class^="col"]:nth-child(4n) .info-box-icon{
   color:#341EC0
 }
 
