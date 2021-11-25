@@ -335,8 +335,8 @@ input::placeholder{
   position: absolute;
   top: 0;
   left: 97%;
-  z-index: 1;
   border-radius: 0 5px 5px 0;
+  z-index: 1;
 }
 
 .ams-sidebar.active .sidebar-menu .sub-menu ul{
