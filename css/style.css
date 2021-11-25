@@ -1260,6 +1260,33 @@ a:focus{
   padding-left: 30px;
 }
 
+/* Select Box */
+
+.single-select-box{
+  margin-bottom: 30px;
+}
+
+.single-select-box p{
+  width: 100%;
+  background-color: #243E8B;
+  color: #fff;
+  padding: 12px 14px;
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0;
+}
+
+.check-options{
+  padding: 24px 14px;
+  border: 1px solid rgba(221, 221, 221, 0.8);
+  border-radius: 0 0 5px 5px;
+}
+
+.check-options label{
+  font-size: 18px;
+  color: #6A6A6A;
+  margin-right: 32px;
+}
+
 
 
 
