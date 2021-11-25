@@ -50,6 +50,7 @@ function actionSelect() {
     document.getElementById("action-dropdown").classList.toggle("show");
 }
 
+
 (function(){
 
     var menuStack = document.querySelector(".menu-stack");
@@ -81,7 +82,24 @@ function actionSelect() {
 
         document.querySelector(".main-nav").classList.toggle("move");
     })
-    
+
+    // Profile Dropdown
+    var admin = document.querySelector(".ams-admin");
+
+    admin.onclick = function(){
+        document.querySelector("#profile-dropdown").classList.toggle("show");
+        console.log(admin)
+    }
+
+    // Sidebar fixed
+
+    var navToggle = document.querySelector(".nav-toggle");
+
+    navToggle.onclick = function(){
+        if(window.innerWidth <=1200 ){
+           document.querySelector(".ams-nav-wpr").classList.toggle("fixed");
+        }
+    }
     
     // Select Box
 

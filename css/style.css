@@ -354,7 +354,7 @@ input::placeholder{
 
 .sub-menu li a{
   position: relative;
-  padding: 5px 20px;
+  padding: 5px 20px 5px 10px;
   border: none;
   white-space: nowrap;
   color: #777;
@@ -364,8 +364,8 @@ input::placeholder{
   position: absolute;
   content: "";
   left: -5px;
-  top: 10px;
-  width:20px;
+  top: 12px;
+  width:10px;
   height: 1px;
   background-color:  #777;
 
@@ -375,9 +375,6 @@ input::placeholder{
   background-color: transparent;
 }
 
-.sub-menu ul{
- margin-left: 26px;
-}
 
 /* ----- Dashboard Content ----- */
 
@@ -481,6 +478,7 @@ input::placeholder{
   display: flex;
   align-items: center;
   margin: 0 50px 0 24px;
+  cursor: pointer;
 }
 
 .admin-image{
