@@ -21,6 +21,35 @@
 
 
 /* Layout: Max 1400px  */
+@media only screen and (max-width: 1400px) {
+    
+    #supplierList{
+        display: block;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        white-space: nowrap;
+    }
+}
+
+/* Layout: Max Width 1300px */
+@media only screen and (max-width:1300px){
+    #supplierList-2{
+        display: block;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        white-space: nowrap;
+    }
+}
+
+ /* Layout: Max 1600px  */
+ @media only screen and (max-width: 1600px) {
+    .ams-admin{
+        margin-right: 0;
+    }
+}
+
+
+/* Layout: Max 1200px  */
 @media only screen and (max-width: 1200px) {
 
     .ams-sidebar{
@@ -46,15 +75,6 @@
         left: 0;
     }
 
-    
-
-    #supplierList{
-        display: block;
-        overflow-x: scroll;
-        overflow-y:hidden;
-        white-space: nowrap;
-    }
-
     .ams-sidebar.active .sidebar-menu .nav-expand i{
         visibility: visible;
         opacity: 1;
@@ -64,16 +84,6 @@
     .ams-sidebar.active .sidebar-menu .sub-menu ul{
         position: relative;
         left: 0;
-    }
-}
-
-/* Layout: Max Width 1399px */
-@media only screen and (max-width:1300px){
-    #supplierList-2{
-        display: block;
-        overflow-x: scroll;
-        overflow-y:hidden;
-        white-space: nowrap;
     }
 }
 
