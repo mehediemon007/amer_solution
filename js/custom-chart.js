@@ -99,7 +99,16 @@ var stackedOptions = {
       },
     },
     grid: {
-      
+      xaxis: {
+        lines: {
+            show: true
+        }
+      },   
+      yaxis: {
+          lines: {
+              show: true
+          }
+      },
     },
     xaxis: {
       categories: [
