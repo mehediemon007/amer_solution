@@ -427,6 +427,7 @@ input::placeholder{
 }
 
 .nav-right .nav-item {
+  position: relative;
   margin: 0 8px;
 }
 
@@ -469,6 +470,11 @@ input::placeholder{
   font-size: 18px;
   color: #243E8B;
   margin-left: 5px;
+}
+
+.nav-search i{
+  color: #B5AFC7;
+  margin: 0 8px;
 }
 
 .nav-search-input{
