@@ -242,6 +242,15 @@
     .ams-customer-add-form{
         padding: 40px 0;
     }
+
+    .dropdown-content{
+        transform: translateY(120px);
+    }
+
+    .show{
+        transform: translateY(60px);
+        right: 2%;
+    }
 }
 
 /* Layout: Max Width 480px */
