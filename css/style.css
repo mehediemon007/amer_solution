@@ -240,6 +240,7 @@ input::placeholder{
   height: 65px;
   line-height: 65px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .brand-logo .brand-image{

@@ -97,6 +97,18 @@
     .ams-nav-wpr.fixed + .ams-main-content-wpr{
         margin-top: 65px;
     }
+
+    .single-info-box{
+        grid-template-columns: 60px 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .single-info-box .info-box-icon{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 26px;
+    }
 }
 
 /* Layout: Max Width 1099px */
@@ -222,7 +234,7 @@
         display: none;
     }
 
-    .nav-right .ams-admin,
+    .nav-right .ams-admin-wpr,
     .nav-right span:last-child{
         display: flex !important;
     }
