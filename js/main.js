@@ -96,6 +96,20 @@ function profileSelect(){
            document.querySelector(".ams-nav-wpr").classList.toggle("fixed");
         }
     }
+
+    // Search Input
+
+    var searchIocn = document.querySelector(".search-icon");
+    var navSearch = document.querySelector(".nav-search-input");
+    var closeIcon = document.querySelector(".search-close");
+
+    searchIocn.addEventListener("click",() => {
+        navSearch.classList.add("open");
+    })
+
+    closeIcon.onclick = function(){
+        navSearch.classList.remove("open");
+    }
     
     // Select Box
 
