@@ -1318,14 +1318,34 @@ a:focus{
 
 /* Cart */
 
+.ams-products{
+  height: calc(100vh - 60px);
+}
+
+.product-list{
+  height: 100%;
+  overflow-y: auto;
+}
+
 .product-filter select{
   width: 100%;
-  padding: 16px;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 24px;
   outline: none;
+}
+
+.product-filter .select2-container .select2-selection--single{
+  height: 40px;
   border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-filter .select2-container--default .select2-selection--single .select2-selection__rendered{
+  line-height: 40px;
+}
+
+.product-filter .select2-container--open .select2-dropdown{
+  top: -20px;
 }
 
 .product-list .single-product{
@@ -1347,6 +1367,109 @@ a:focus{
   color: #98979A;
 }
 
+.product-cart{
+  height: 90vh;
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-cart .ams-input{
+  grid-template-columns: 1fr;
+  grid-column-gap:0;
+}
+
+.product-cart input{
+  border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
+}
+
+.cart-table{
+  height: 68vh;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.cart-table tbody tr:nth-child(odd){
+  background-color: #F9EBEC;
+  
+}
+
+.cart-table td,
+.cart-table th{
+  text-align: center;
+}
+
+.cart-table th{
+  color: #243E8B;
+}
+
+.quantity{
+  display: inline-block;
+  width: 50px;
+  padding: 5px 0;
+  position: relative;
+  border: 1px solid #EB3B4A;
+  border-radius: 5px;
+}
+
+.quantity::before{
+  position:absolute;
+  content: "-";
+  top:-1px;
+  left: -25px;
+  width: 30px;
+  height: 105%;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  background-color: #243E8B;
+  border:1px solid #243E8B;
+  cursor:pointer;
+}
+
+.quantity::after{
+  position:absolute;
+  content: "+";
+  top: -1px;
+  right: -25px;
+  width: 30px;
+  height: 105%;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  background-color: #243E8B;
+  border:1px solid #243E8B;
+  cursor:pointer;
+}
+
+td i{
+  color: #ED4C5C;
+}
+
+.cart-footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #243E8B;
+}
+
+.total-sell{
+  font-size: 32px;
+  color: #fff;
+}
+
+.back-btn{
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  padding: 15px 50px;
+  background-color: #8E8AD9;
+}
 
 
 
