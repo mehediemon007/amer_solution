@@ -1318,10 +1318,6 @@ a:focus{
 
 /* Cart */
 
-.ams-products{
-  height: calc(100vh - 60px);
-}
-
 .product-list{
   height: 100%;
   overflow-y: auto;
@@ -1348,8 +1344,27 @@ a:focus{
   top: -20px;
 }
 
+.product-list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 12px;
+}
+
 .product-list .single-product{
-  margin-top: 0;
+  position: relative;
+  margin: 0;
+  border: 1px solid #f7f7f7;
+  box-shadow: 1px 5px 10px rgb(0 0 0 / 10%);
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.product-list .single-product:hover .product-details *{
+  color: #243E8B;
+}
+
+.product-list .single-product.count:hover .product-details *{
+  color: #fff;
 }
 
 .product-list .single-product .product-image{
@@ -1362,13 +1377,39 @@ a:focus{
   height: 150px;
 }
 
+.product-list .product-details{
+  border: none;
+  transition: .3s;
+}
+
 .product-list .product-details p{
   font-size: 14px;
   color: #98979A;
+  transition: .3s;
+}
+
+.product-list .single-product.count .product-details, 
+.product-list .single-product.count .product-details p {
+  color: #fff;
+  background-color: #243E8B;
+}
+
+.product-list .single-product.count::before{
+  position: absolute;
+  content: "1";
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #243E8B;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  overflow: hidden;
 }
 
 .product-cart{
-  height: 90vh;
   background-color: #fff;
   padding: 18px;
   border-radius: 5px;
@@ -1381,13 +1422,12 @@ a:focus{
 }
 
 .product-cart input{
-  border: none;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 0;
 }
 
 .cart-table{
-  height: 68vh;
+  height: 60vh;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -1396,9 +1436,9 @@ a:focus{
   
 }
 
-.cart-table td,
-.cart-table th{
-  text-align: center;
+.cart-table td:not(:first-child),
+.cart-table th:not(:first-child){
+  text-align: center !important;
 }
 
 .cart-table th{
@@ -1410,7 +1450,7 @@ a:focus{
   width: 50px;
   padding: 5px 0;
   position: relative;
-  border: 1px solid #EB3B4A;
+  border: 1px solid #243E8B;
   border-radius: 5px;
 }
 
@@ -1449,9 +1489,7 @@ td i{
 }
 
 .cart-footer{
-  position: fixed;
   width: 100%;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
