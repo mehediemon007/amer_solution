@@ -1316,6 +1316,37 @@ a:focus{
   margin-right: 32px;
 }
 
+/* Cart */
+
+.product-filter select{
+  width: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  outline: none;
+  border: none;
+}
+
+.product-list .single-product{
+  margin-top: 0;
+}
+
+.product-list .single-product .product-image{
+  align-items: center;
+  padding: 24px 16px 0;
+  background-color: #fff;
+}
+
+.product-list .single-product img{
+  height: 150px;
+}
+
+.product-list .product-details p{
+  font-size: 14px;
+  color: #98979A;
+}
+
 
 
 
