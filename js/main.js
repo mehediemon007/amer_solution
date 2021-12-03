@@ -154,17 +154,16 @@ function profileSelect(){
     // };
 
 
-    // Get the container element
-    var btnContainer = document.getElementsByClassName("product-list")
+    // Get the products container
+    var producttList = document.getElementsByClassName("product-list")
 
-    console.log(btnContainer)
 
-    // Get all buttons with class="btn" inside the container
-    var btns = btnContainer[0].getElementsByClassName("single-product");
+    // Get all products with class="single-product" inside the container
+    var cartProducts = producttList[0].getElementsByClassName("single-product");
 
-    // Loop through the buttons and add the active class to the current/clicked button
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
+    // Loop through the products and add the count class to the current/clicked div
+    for (var i = 0; i < cartProducts.length; i++) {
+        cartProducts[i].addEventListener("click", function() {
         this.className += " count";
        });
     }
