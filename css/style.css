@@ -494,6 +494,7 @@ input::placeholder{
 .nav-search-input.open{
   display: block;
   height: 60px;
+  z-index: 1;
 }
 
 .nav-search-input input{
@@ -1428,7 +1429,7 @@ a:focus{
 }
 
 .cart-table{
-  height: 56vh;
+  height: 60vh;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -1493,6 +1494,10 @@ a:focus{
 
 td i{
   color: #ED4C5C;
+}
+
+.total-table td{
+  padding: 4px 0;
 }
 
 .cart-footer{
