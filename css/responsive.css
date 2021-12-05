@@ -230,7 +230,7 @@
     }
 
     .product-cart{
-        height: 90vh;
+        height: 95vh;
     }
 
     .ams-cart.ams-main-content{
@@ -466,6 +466,7 @@
     }
 
     .total-sell{
+        width: 30%;
         font-size: 20px;
         margin: 0 37px;
     }

@@ -114,11 +114,11 @@
         </div> -->
 
         <!-- Main Section -->
-        <div class="ams-main-content-wpr">
+        <div class="ams-main-content-wpr p-0">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="ams-products">
+                        <div class="ams-products p-2">
                             <div class="product-filters mb-4">
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -311,7 +311,15 @@
                                     </fieldset> -->
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                                        <input type="text" class="form-control" placeholder="Guest Customer" aria-label="Username" aria-describedby="basic-addon1">
+                                        <label for="category-select" class="visually-hidden">Unit</label>
+                                        <select class="unit-select-box class="form-control"" id="guest-select">
+                                            <option value="all">All Category</option>
+                                            <option value="food">Food</option>
+                                            <option value="monitor">Monitor</option>
+                                            <option value="fruits">Fruits</option>
+                                            <option value="appearel">Appearel</option>
+                                            <option value="shoe">Shoes</option>
+                                        </select>
                                         <button class="add-input"><i class="fas fa-plus"></i></button>
                                     </div>
                                 </div>
