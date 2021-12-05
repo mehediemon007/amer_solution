@@ -118,7 +118,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="ams-products p-2">
+                        <div class="ams-products p-3">
                             <div class="product-filters mb-4">
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -303,22 +303,27 @@
                                         <input type="text" class="form-control" placeholder="Enter Product name / SKU / Scan bar code" aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-md-4 my-2 mt-sm-0">
+                                <div class="col-sm-6 col-md-4">
                                     <!-- <fieldset class="ams-input">
                                         <label for="customer" class="visually-hidden">Customer Name :</label>
                                         <input type="text" id="customer" placeholder="Guest Customer">
                                         <button class="add-input"><i class="fas fa-plus"></i></button>
                                     </fieldset> -->
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                                        <label for="category-select" class="visually-hidden">Unit</label>
-                                        <select class="unit-select-box class="form-control"" id="guest-select">
-                                            <option value="all">All Category</option>
-                                            <option value="food">Food</option>
-                                            <option value="monitor">Monitor</option>
-                                            <option value="fruits">Fruits</option>
-                                            <option value="appearel">Appearel</option>
-                                            <option value="shoe">Shoes</option>
+                                    <!-- <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
+                                        <button class="add-input"><i class="fas fa-plus"></i></button>
+                                    </div> -->
+
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
+                                        <label for="user-select" class="visually-hidden">Guest</label>
+                                        <select class="unit-select-box form-control" id="guest-select" aria-label="Guest-select" aria-describedby="basic-addon2">
+                                            <option value="all brand">All Brands</option>
+                                            <option value="mens world">Men's World</option>
+                                            <option value="lg">Lg</option>
+                                            <option value="samsung">Samsung</option>
+                                            <option value="juice">Tropicana</option>
+                                            <option value="lubnan">Lubnan</option>
                                         </select>
                                         <button class="add-input"><i class="fas fa-plus"></i></button>
                                     </div>
@@ -338,28 +343,28 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-start">Mobile set</td>
-                                                    <td class="quantity"><span class="count-btn">-</span><input type="text"><span class="count-btn increment">+</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="text" class="text-center"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-start">Mobile set</td>
-                                                    <td class="quantity"><span class="count-btn">-</span><input type="text"><span class="count-btn increment">+</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="text" class="text-center"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-start">Cotton Shalowar</td>
-                                                    <td class="quantity"><span class="count-btn">-</span><input type="text"><span class="count-btn increment">+</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="text" class="text-center"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-start">Mobile set</td>
-                                                    <td class="quantity"><span class="count-btn">-</span><input type="text"><span class="count-btn increment">+</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="text" class="text-center"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
@@ -367,6 +372,10 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
                                     <div class="total-table py-2">
                                         <table class="table table-borderless">
                                             <tr>
