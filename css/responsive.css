@@ -408,6 +408,10 @@
         grid-template-columns: repeat(2,1fr);
     }
 
+    .product-cart{
+        padding: 18px 5px;
+    }
+
     .product-cart .ams-input .add-input{
         top: 0;
     }
@@ -424,7 +428,19 @@
 
     .quantity::before,
     .quantity::after{
+        width: 24px;
+        height: 110%;
         line-height: 20px;
+        left: -14px;
+    }
+
+    .quantity::after{
+        left: auto;
+        right: -14px;
+    }
+
+    .total-sell{
+        font-size: 20px;
     }
 }
 
