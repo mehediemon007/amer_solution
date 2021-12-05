@@ -69,12 +69,15 @@
 @media only screen and (min-width:1201px){
 
     #ams-cart .ams-sidebar{
-        width: 60px;
+        /* width: 60px; */
+        width: 0;
     }
 
     #ams-cart .ams-main-content{
-        left: 60px;
-        width: calc(100% - 60px);
+        left: 0;
+        width: 100%;
+        /* left: 60px;
+        width: calc(100% - 60px); */
     }
 
     #ams-cart .ams-sidebar .sidebar-menu .nav-expand i{
@@ -222,7 +225,7 @@
 @media only screen and (min-width:992px){
 
     .product-list-container{
-        height: 75vh;
+        height: 80vh;
         overflow: auto;
     }
 
@@ -325,6 +328,15 @@
     .product-cart{
         margin:-30px 0  50px
     }
+
+    .count-btn{
+        left: 26%;
+    }
+
+    .increment{
+        left: auto;
+        right: 26%;
+    }
 }
 
 /* Layout: Max Width 767px */
@@ -375,6 +387,15 @@
 
     .total-sell{
         font-size: 26px;
+    }
+
+    .count-btn{
+        left: 5%;
+    }
+
+    .increment{
+        left: auto;
+        right: 5%;
     }
 }
 
@@ -441,10 +462,24 @@
 
     .total-sell{
         font-size: 20px;
+        margin: 0 37px;
     }
 
     .total-table td{
         font-size: 14px;
+    }
+
+    .cart-footer{
+        justify-content: flex-start;
+    }
+
+    .cart-footer-btns{
+        width: 100%;
+    }
+
+    .cart-footer-btn{
+        font-size: 14px;
+        padding: 20px 10px;
     }
 }
 
@@ -482,18 +517,22 @@
         font-size: 14px;
     }
 
-    .cart-footer-btns,
-    .total-sell{
-        display: none;
-    }
-
     .cart-footer{
         justify-content: center;
+    }
+
+    .cart-footer-btn{
+        font-size: 12px;
+        padding: 22px 4px;
     }
 }
 
 /* Layout: Max Width 320px */
 @media only screen and (max-width:320px){
     
+    .total-sell{
+        width: 20%;
+        margin: 0 10px;
+    }
 }
 

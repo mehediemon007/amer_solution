@@ -26,7 +26,7 @@
 <body id="ams-cart">
     
     <!-- SideBar -->
-    <div class="ams-sidebar">
+    <!-- <div class="ams-sidebar">
         <div class="brand-logo">
             <a href="#">
                 <span class="brand-image"><img src="images/logo/logo.png" alt="logo"></span>
@@ -54,14 +54,14 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <!-- Main Content -->
 
     <main class="ams-cart ams-main-content">
 
         <!-- Nav Menu -->
-        <div class="ams-nav-wpr">
+        <!-- <div class="ams-nav-wpr">
             <span class="nav-toggle d-none">
                 <i class="fas fa-bars"></i>
             </span>
@@ -111,7 +111,7 @@
                 </div>
                 <span class="nav-item menu-stack"><i class="fas fa-ellipsis-v"></i></span>
             </div>
-        </div>
+        </div> -->
 
         <!-- Main Section -->
         <div class="ams-main-content-wpr">
@@ -293,23 +293,32 @@
                     <div class="col-lg-7">
                         <div class="product-cart">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <fieldset class="ams-input">
+                                <div class="col-sm-6 col-md-8">
+                                    <!-- <fieldset class="ams-input">
                                         <label for="product-name" class="visually-hidden">E-mail Address :</label>
                                         <input type="email" id="product-name" placeholder="Enter Product name / SKU / Scan bar code">
-                                    </fieldset>
+                                    </fieldset> -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-barcode"></i></span>
+                                        <input type="text" class="form-control" placeholder="Enter Product name / SKU / Scan bar code" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
                                 </div>
-                                <div class="col-sm-6 my-3 mt-sm-0">
-                                    <fieldset class="ams-input">
+                                <div class="col-sm-6 col-md-4 my-2 mt-sm-0">
+                                    <!-- <fieldset class="ams-input">
                                         <label for="customer" class="visually-hidden">Customer Name :</label>
                                         <input type="text" id="customer" placeholder="Guest Customer">
                                         <button class="add-input"><i class="fas fa-plus"></i></button>
-                                    </fieldset>
+                                    </fieldset> -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                        <input type="text" class="form-control" placeholder="Guest Customer" aria-label="Username" aria-describedby="basic-addon1">
+                                        <button class="add-input"><i class="fas fa-plus"></i></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="cart-table mt-4">
+                                    <div class="cart-table">
                                         <table class="table table-borderless">
                                             <thead>
                                                 <th class="text-start" style="width: 40%;">Product</th>
@@ -321,28 +330,28 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-start">Mobile set</td>
-                                                    <td><span class="quantity">50</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="text"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-start">Mobile set</td>
-                                                    <td><span class="quantity">50</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="number"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-start">Cotton Shalowar</td>
-                                                    <td><span class="quantity">50</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="number"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-start">Mobile set</td>
-                                                    <td><span class="quantity">50</span></td>
+                                                    <td class="quantity"><span class="count-btn">-</span><input type="number"><span class="count-btn increment">+</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
                                                     <td><i class="far fa-trash-alt"></i></td>
@@ -381,9 +390,9 @@
 
     <footer class="cart-footer">
         <a  href="#" class="cart-footer-btn"><i class="fas fa-backward"></i></a>
-        <span class="total-sell">Total : $345,00</span>
-        <div class="cart-footer-btns">
-            <button type="button" class="cart-footer-btn bg-primary d-none d-sm-inline-block">Save Sell</button>
+        <span class="total-sell text-end">Total : $345,00</span>
+        <div class="cart-footer-btns text-end">
+            <button type="button" class="cart-footer-btn bg-primary">Save Sell</button>
             <button type="button" class="cart-footer-btn bg-danger">Cancle</button>
             <button type="button" class="cart-footer-btn bg-success m-0">Payemnt</button>
         </div>

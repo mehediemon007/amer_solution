@@ -888,7 +888,7 @@ a:focus{
   top: 32px !important;
 }
 
-.ams-input .add-input{
+.add-input{
   position: absolute;
   top: 0;
   right: 0;
@@ -1202,7 +1202,7 @@ a:focus{
 }
 
 .product-details{
-  padding: 20px 16px;
+  padding: 14px;
   background-color: #f7f7f7;
   border:1px solid #f7f7f7;
 }
@@ -1433,7 +1433,7 @@ a:focus{
 }
 
 .cart-table{
-  height: 60vh;
+  height: 69vh;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -1452,52 +1452,42 @@ a:focus{
 }
 
 .cart-table td {
-  padding: 2px 5px !important;
+  padding: 5px !important;
   vertical-align: baseline;
 }
 
 .quantity{
+  position: relative;
+}
+
+.quantity input{
   display: inline-block;
   width: 50px;
-  height: 30px;
-  padding: 4px 0;
-  position: relative;
+  height: 24px;
+  color: #444;
+  padding: 4px 16px;
   border: 1px solid #243E8B;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
-.quantity::before{
-  position:absolute;
-  content: "-";
-  top:-1px;
-  left: -25px;
-  width: 30px;
-  height: 107%;
+.count-btn{
+  position: absolute;
+  display: inline-block;
+  left: 5%;
+  width: 20px;
+  height: 24px;
   color: #fff;
-  text-align: center;
-  line-height: 26px;
   background-color: #243E8B;
-  border:1px solid #243E8B;
-  cursor:pointer;
 }
 
-.quantity::after{
-  position:absolute;
-  content: "+";
-  top: -1px;
-  right: -25px;
-  width: 30px;
-  height: 105%;
-  color: #fff;
-  text-align: center;
-  line-height: 32px;
-  background-color: #243E8B;
-  border:1px solid #243E8B;
-  cursor:pointer;
+.increment{
+  left: auto;
+  right: 5%;
 }
 
 td i{
   color: #ED4C5C;
+  vertical-align: baseline;
 }
 
 .total-table td{
@@ -1507,14 +1497,18 @@ td i{
 .cart-footer{
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #243E8B;
 }
 
 .total-sell{
+  width: 30%;
   font-size: 32px;
   color: #fff;
+}
+
+.cart-footer-btns{
+  width: 70%;
 }
 
 .cart-footer-btn{
