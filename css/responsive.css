@@ -39,6 +39,7 @@
     }
 
     .product-list .single-product img{
+        width: auto;
         height: 100px;
     }
 
@@ -62,6 +63,31 @@
         overflow-x: scroll;
         overflow-y:hidden;
         white-space: nowrap;
+    }
+}
+
+@media only screen and (min-width:1201px){
+
+    #ams-cart .ams-sidebar{
+        width: 60px;
+    }
+
+    #ams-cart .ams-main-content{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    #ams-cart .ams-sidebar .sidebar-menu .nav-expand i{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #ams-cart .ams-sidebar .sidebar-menu .sub-menu{
+        position: absolute;
+        top: 0;
+        left: 97%;
+        border-radius: 0 5px 5px 0;
+        z-index: 1;
     }
 }
 
@@ -128,6 +154,14 @@
 
     .product-list .single-product img{
         height: 85px;
+    }
+
+    .ams-cart .nav-toggle{
+        display: block !important;
+    }
+
+    .cart-table td{
+        font-size: 15px;
     }
 }
 
@@ -282,6 +316,15 @@
         grid-template-columns: repeat(4,1fr);
         margin-bottom: 50px;
     }
+
+    .cart-footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+    .product-cart{
+        margin:-30px 0  50px
+    }
 }
 
 /* Layout: Max Width 767px */
@@ -319,6 +362,20 @@
         transform: translateY(60px);
         right: 2%;
     }
+
+    .product-cart{
+        margin-bottom: 20px;
+    }
+
+    .cart-footer-btn{
+        min-width: 50px;
+        font-size: 20px;
+        padding: 10px 8px;
+    }
+
+    .total-sell{
+        font-size: 26px;
+    }
 }
 
 /* Layout: Max Width 480px */
@@ -354,6 +411,21 @@
     .product-cart .ams-input .add-input{
         top: 0;
     }
+
+    .cart-table td{
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .quantity{
+        height: 24px;
+        padding: 3px 0;
+    }
+
+    .quantity::before,
+    .quantity::after{
+        line-height: 20px;
+    }
 }
 
 /* Layout: Max Width 380px */
@@ -376,6 +448,27 @@
 
     .donat-chart{
         height: 450px;
+    }
+
+    .cart-table{
+        overflow-x: auto;
+    }
+
+    .cart-table td{
+        min-width: 100px !important;
+    }
+
+    .total-table td{
+        font-size: 14px;
+    }
+
+    .cart-footer-btns,
+    .total-sell{
+        display: none;
+    }
+
+    .cart-footer{
+        justify-content: center;
     }
 }
 

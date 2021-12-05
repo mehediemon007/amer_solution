@@ -62,7 +62,7 @@
 
         <!-- Nav Menu -->
         <div class="ams-nav-wpr">
-            <span class="nav-toggle">
+            <span class="nav-toggle d-none">
                 <i class="fas fa-bars"></i>
             </span>
             <nav class="main-nav">
@@ -117,7 +117,7 @@
         <div class="ams-main-content-wpr">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-lg-5">
+                    <div class="col-lg-5">
                         <div class="ams-products">
                             <div class="product-filters mb-4">
                                 <div class="row">
@@ -299,7 +299,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-lg-7">
+                    <div class="col-lg-7">
                         <div class="product-cart">
                             <div class="row">
                                 <div class="col-sm-6">
@@ -321,11 +321,11 @@
                                     <div class="cart-table mt-4">
                                         <table class="table table-borderless">
                                             <thead>
-                                                <th class="text-start">Product</th>
-                                                <th>Quantity</th>
-                                                <th>Price</th>
-                                                <th>Subtotal</th>
-                                                <th>Action</th>
+                                                <th class="text-start" style="width: 40%;">Product</th>
+                                                <th style="width: 20%;">Quantity</th>
+                                                <th style="width: 10%;">Price</th>
+                                                <th style="width: 20%;">Subtotal</th>
+                                                <th style="width: 5%;">Action</th>
                                             </thead>
                                             <tbody>
                                                 <tr>
@@ -343,7 +343,7 @@
                                                     <td><i class="far fa-trash-alt"></i></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-start">Mobile set</td>
+                                                    <td class="text-start">Cotton Shalowar</td>
                                                     <td><span class="quantity">50</span></td>
                                                     <td>$500.00</td>
                                                     <td>@25000.00</td>
@@ -359,7 +359,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="total-table py-4">
+                                    <div class="total-table py-2">
                                         <table class="table table-borderless">
                                             <tr>
                                                 <td>Total Items</td>
@@ -389,12 +389,12 @@
     </main>
 
     <footer class="cart-footer">
-        <a  href="#" class="back-btn"><i class="fas fa-backward"></i></a>
+        <a  href="#" class="cart-footer-btn"><i class="fas fa-backward"></i></a>
         <span class="total-sell">Total : $345,00</span>
-        <div>
-            <button type="button" class="btn btn-primary me-3">Save Sell</button>
-            <button type="button" class="btn btn-danger me-3">Cancle</button>
-            <button type="button" class="btn btn-success me-4">Payemnt</button>
+        <div class="cart-footer-btns">
+            <button type="button" class="cart-footer-btn bg-primary d-none d-sm-inline-block">Save Sell</button>
+            <button type="button" class="cart-footer-btn bg-danger">Cancle</button>
+            <button type="button" class="cart-footer-btn bg-success m-0">Payemnt</button>
         </div>
     </footer>
 
