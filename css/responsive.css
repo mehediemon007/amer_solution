@@ -442,6 +442,10 @@
     .total-sell{
         font-size: 20px;
     }
+
+    .total-table td{
+        font-size: 14px;
+    }
 }
 
 /* Layout: Max Width 380px */
