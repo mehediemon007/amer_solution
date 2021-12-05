@@ -1433,7 +1433,7 @@ a:focus{
 }
 
 .cart-table{
-  height: 64vh;
+  height: 63vh;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -1456,6 +1456,12 @@ a:focus{
   vertical-align: baseline;
 }
 
+.quantity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .quantity input{
   display: inline-block;
   width: 50px;
@@ -1473,6 +1479,7 @@ a:focus{
   height: 24px;
   color: #fff;
   background-color: #243E8B;
+  border: 1px solid #243E8B;
 }
 
 td i{
