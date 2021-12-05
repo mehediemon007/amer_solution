@@ -389,7 +389,12 @@
         font-size: 26px;
     }
 
+    .quantity{
+        position: relative;
+    }
+
     .count-btn{
+        position: absolute;
         left: 5%;
     }
 

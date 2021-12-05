@@ -1456,10 +1456,6 @@ a:focus{
   vertical-align: baseline;
 }
 
-.quantity{
-  position: relative;
-}
-
 .quantity input{
   display: inline-block;
   width: 50px;
@@ -1471,18 +1467,12 @@ a:focus{
 }
 
 .count-btn{
-  position: absolute;
   display: inline-block;
   left: 5%;
   width: 20px;
   height: 24px;
   color: #fff;
   background-color: #243E8B;
-}
-
-.increment{
-  left: auto;
-  right: 5%;
 }
 
 td i{
