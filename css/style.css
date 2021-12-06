@@ -1497,6 +1497,8 @@ a:focus{
   display: inline-block;
   width: 50px;
   height: 24px;
+  font-size: 14px;
+  font-weight: 500;
   color: #444;
   padding: 4px 0;
   border: 1px solid #243E8B;
