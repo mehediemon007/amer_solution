@@ -1594,16 +1594,15 @@ td i{
 }
 
 .cart-input input{
-  width: 200px;
+  width: 150px;
   height: 18px;
   color: #000;
-  border-radius: 0;
+  border-radius: 4px;
   border: 1px solid #ced4da;;
   box-shadow: none;
   margin-bottom: 16px;
   margin-left: 16px;
-  border-radius: 2px;
-  text-align: center;
+  text-align: right;
 }
 
 .cart-footer-2 .cart-btn{
@@ -1621,8 +1620,8 @@ td i{
 .cart-footer-2{
   align-items: center;
   background-color: #fff;
-  padding: 8px 18px;
-  box-shadow: 0 0 20px rgb(0 0 0 / 8%);
+  padding-right: 18px;
+  box-shadow: 0 0 30px rgb(0 0 0 / 20%);
 }
 
 #net-total{
