@@ -1594,6 +1594,10 @@ td i{
   font-weight: 500;
 }
 
+.cart-total-calc{
+  overflow-y: scroll;
+}
+
 .cart-input input{
   width: 150px;
   height: 18px;
@@ -1601,7 +1605,7 @@ td i{
   border-radius: 4px;
   border: 1px solid #ced4da;;
   box-shadow: none;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   margin-left: 16px;
   text-align: right;
 }
