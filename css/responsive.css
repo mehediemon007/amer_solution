@@ -250,6 +250,7 @@
 
 /* Layout: Max Width 991px */
 @media only screen and (max-width:991px){
+
     .ams-customer-add-form .input-group.input-verticle{
         grid-template-columns: repeat(2,1fr);
     }
@@ -307,10 +308,6 @@
         padding-right: 0;
     }
 
-    .cart-table{
-        height: auto;
-    }
-
     .product-list-container{
         height: auto;
     }
@@ -318,6 +315,10 @@
     .product-list{
         grid-template-columns: repeat(4,1fr);
         margin-bottom: 50px;
+    }
+
+    .product-list .single-product img{
+        height: 130px;
     }
 
     .cart-footer{

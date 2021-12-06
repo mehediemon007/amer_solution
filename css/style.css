@@ -1344,6 +1344,7 @@ a:focus{
 .product-cart .select2-container .select2-selection--single{
   height: 38px;
   border-radius: 0 5px 5px 0;
+  border-color: #ced4da;
 }
 
 .product-cart .select2-container{
@@ -1404,7 +1405,6 @@ a:focus{
 
 .product-list .product-details p{
   font-size: 14px;
-  color: #98979A;
   transition: .3s;
 }
 
@@ -1432,6 +1432,11 @@ a:focus{
   overflow: hidden;
 }
 
+.product-cart .select2-container--default .select2-selection--single .select2-selection__arrow{
+  right: auto;
+  left: 90px;
+}
+
 .product-cart{
   background-color: #fff;
   padding: 18px;
@@ -1455,7 +1460,7 @@ a:focus{
 }
 
 .cart-table{
-  height: 63vh;
+  height: calc(100vh - 250px);
   border-bottom: 1px solid #d5d5d5;
 }
 

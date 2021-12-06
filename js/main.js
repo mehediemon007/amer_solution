@@ -61,9 +61,11 @@ function profileSelect(){
 
     var stackMenu = document.querySelector(".menu-stack");
 
-    stackMenu.addEventListener("click", () => {
-        document.querySelector(".main-nav").classList.toggle("move");
-    })
+    if(stackMenu != null){
+        stackMenu.addEventListener("click", () => {
+            document.querySelector(".main-nav").classList.toggle("move");
+        })
+    }
 
     window.onclick = function(event) {
         if ((!event.target.matches('.dropbtn')) && (!event.taget.matches(".ams-admin"))) {
@@ -91,9 +93,11 @@ function profileSelect(){
 
     var navToggle = document.querySelector(".nav-toggle");
 
-    navToggle.onclick = function(){
-        if(window.innerWidth <=1200 ){
-           document.querySelector(".ams-nav-wpr").classList.toggle("fixed");
+    if(navToggle != null){
+        navToggle.onclick = function(){
+            if(window.innerWidth <=1200 ){
+               document.querySelector(".ams-nav-wpr").classList.toggle("fixed");
+            }
         }
     }
 
@@ -102,15 +106,19 @@ function profileSelect(){
     var searchIocn = document.querySelector(".search-icon");
     var navSearch = document.querySelector(".nav-search-input");
     var closeIcon = document.querySelector(".search-close");
-
-    searchIocn.addEventListener("click",() => {
-        navSearch.classList.add("open");
-    })
-
-    closeIcon.onclick = function(){
-        navSearch.classList.remove("open");
-    }
     
+    if(searchIocn != null){
+        searchIocn.addEventListener("click",() => {
+            navSearch.classList.add("open");
+        })
+    }
+
+    if(closeIcon != null){
+        closeIcon.onclick = function(){
+            navSearch.classList.remove("open");
+        }
+    }
+
     // Select Box
 
     //  const selected = document.querySelector(".selected");
