@@ -240,6 +240,10 @@
         height: 95vh;
     }
 
+    .product-cart-2{
+        height: calc(100vh - 70px);
+    }
+
     .ams-cart.ams-main-content{
         position: fixed;
         height: 100vh; 
