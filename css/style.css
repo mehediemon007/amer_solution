@@ -1599,6 +1599,7 @@ td i{
 }
 
 .cart-total-calc{
+  min-height: 40px;
   overflow-y: scroll;
 }
 
