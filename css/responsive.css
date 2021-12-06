@@ -532,6 +532,13 @@
         flex-direction: column;
         align-items: flex-end;
     }
+
+    .back-btn{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 40px 20px;
+    }
 }
 
 /* Layout: Max Width 380px */
@@ -577,11 +584,16 @@
         padding: 22px 4px;
     }
 
+    .cart-footer-2{
+        padding-right: 5px;
+    }
+
     .cart-footer-2 .cart-btn{
         width: 80px;
         height: 40px;
         font-size: 16px;
         line-height: 40px;
+        margin-left: 4px;
     }
 }
 
