@@ -366,6 +366,10 @@
         }
     }
 
+    .cart-summary{
+        margin-bottom: 40px;
+    }
+
 /* Layout: Max Width 767px */
 @media only screen and (max-width:767px){
 
@@ -567,6 +571,13 @@
         font-size: 12px;
         padding: 22px 4px;
     }
+
+    .cart-footer-2 .cart-btn{
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
 }
 
 /* Layout: Max Width 320px */
@@ -585,13 +596,6 @@
 
     .cart-input input{
         margin-left: 0;
-    }
-    
-    .cart-footer-2 .cart-btn{
-        width: 80px;
-        height: 40px;
-        font-size: 16px;
-        line-height: 40px;
     }
 }
 
