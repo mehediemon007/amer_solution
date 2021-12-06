@@ -253,6 +253,10 @@
         position: fixed;
         bottom: 0;
     }
+
+    .product-cart-2{
+        height: 100vh !important;
+    }
 }
 
 /* Layout: Max Width 991px */
@@ -355,12 +359,12 @@
     }
 
     .product-cart-2 .cart-btn{
-        width: 100px;
-        height: 50px;
-        font-size: 20px;
-        line-height: 50px;
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 50px;
+        }
     }
-}
 
 /* Layout: Max Width 767px */
 @media only screen and (max-width:767px){
@@ -509,6 +513,11 @@
     .cart-footer-btn{
         font-size: 14px;
         padding: 20px 10px;
+    }
+
+    .cart-footer-2{
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 

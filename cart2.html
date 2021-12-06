@@ -29,7 +29,7 @@
 
     <main class="ams-main-content-wpr p-0">
         <div class="container">
-            <div class="row product-cart product-cart-2">
+            <div class="row product-cart product-cart-2 mb-0">
                 <div class="col-lg-8">
                     <div class="product-cart-wpr">
                         <div class="input-group mb-3">
@@ -101,10 +101,13 @@
                         <div class="total-summary">
                             <p><span>Total Amount:</span><span>$100</span></p>
                             <p><span>Discount:</span><span>$20</span></p>
-                            <p><span>Vat/SD/Tax:</span><span>$100</span></p>
+                            <p><span>Vat:</span><span>$100</span></p>
+                            <p><span>SD:</span><span>$100</span></p>
+                            <p><span>Tax:</span><span>$100</span></p>
+                            <p><span>Service Charge:</span><span>$100</span></p>
                             <p><span>Payment:</span><span>$500</span></p>
                         </div>
-                        <div class="total-calc">
+                        <div class="cart-total-calc mt-5">
                             <fieldset class="cart-input text-end">
                                 <label for="paid">Paid :</label>
                                 <input type="text" id="paid" placeholder="">
@@ -117,17 +120,42 @@
                                 <label for="return">Return :</label>
                                 <input type="text" id="return" placeholder="">
                             </fieldset>
+                            <fieldset class="cart-input text-end">
+                                <label for="return">Return :</label>
+                                <input type="text" id="return" placeholder="">
+                            </fieldset>
+                            <fieldset class="cart-input text-end">
+                                <label for="return">Return :</label>
+                                <input type="text" id="return" placeholder="">
+                            </fieldset>
+                            <fieldset class="cart-input text-end">
+                                <label for="return">Return :</label>
+                                <input type="text" id="return" placeholder="">
+                            </fieldset>
                         </div>
-                        <div class="cart-btns text-end">
+                        <!-- <div class="cart-btns text-end">
                             <a href="#" class="cart-btn bg-primary">Save</a>
                             <a href="#" class="cart-btn bg-danger">Clear</a>
                             <a href="#" class="cart-btn bg-success">Payment</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="cart-footer cart-footer-2 justify-content-between">
+        <div class="d-flex align-items-center">
+            <label for="net-total">Net Total:</label>
+            <span id="net-total">1500</span>
+        </div>
+        <div class="cart-btns text-end">
+            <a href="#" class="cart-btn bg-primary">Save</a>
+            <a href="#" class="cart-btn bg-danger">Clear</a>
+            <a href="#" class="cart-btn bg-success">Payment</a>
+        </div>
+    </footer>
     
     <!-- Js files -->
     <script src="js/modernizr-3.5.0.min.js"></script>
