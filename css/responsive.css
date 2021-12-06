@@ -515,6 +515,10 @@
         padding: 20px 10px;
     }
 
+    .cart-summary{
+        margin-bottom: 90px;
+    }
+
     .cart-footer-2{
         flex-direction: column;
         align-items: flex-end;
@@ -571,6 +575,23 @@
     .total-sell{
         width: 20%;
         margin: 0 10px;
+    }
+
+    .cart-input{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-input input{
+        margin-left: 0;
+    }
+    
+    .cart-footer-2 .cart-btn{
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
     }
 }
 
