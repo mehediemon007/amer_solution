@@ -1599,7 +1599,7 @@ td i{
 }
 
 .cart-total-calc{
-  height: 40px;
+  height: 40vh;
   overflow-y: scroll;
 }
 
