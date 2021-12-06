@@ -1562,7 +1562,8 @@ td i{
 
 .product-cart-2{
   height: 100vh !important;
-  padding: 0 16px;
+  padding: 0;
+  background-color: initial;
 }
 
 .cart-summary,
@@ -1572,6 +1573,7 @@ td i{
   padding: 16px;
   height: 100%;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+  background-color: #fff;
 }
 
 .total-summary{
