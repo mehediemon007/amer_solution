@@ -232,8 +232,8 @@ input::placeholder{
 
 .ams-login-form{
   width: 600px;
-  height: 660px;
-  padding: 80px 50px 100px;
+  min-height: 660px;
+  padding: 80px 50px;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(42, 45, 50, 0.15);
 }
@@ -244,7 +244,7 @@ input::placeholder{
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .ams-login-input input{
@@ -284,6 +284,12 @@ input::placeholder{
   background: linear-gradient(89.49deg, #F21D5F 10.69%, #FC5817 97.52%);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
 
+}
+
+.login-text{
+  margin-top: 32px;
+  font-size: 18px;
+  text-align: center;
 }
 
 /*----- Sidebar -----*/

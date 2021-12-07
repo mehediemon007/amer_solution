@@ -438,6 +438,12 @@
         left: auto;
         right: 5%;
     }
+
+    .ams-login-form{
+        width: auto;
+        height: auto;
+        min-height: max-content;
+    }
 }
 
 /* Layout: Max Width 480px */
@@ -545,6 +551,18 @@
         justify-content: center;
         align-items: center;
     }
+
+    .ams-login-2{
+        padding: 0 8%;
+    }
+
+    .ams-login-form{
+        padding: 10% 5%;
+    }
+
+    .login-heading img{
+        width: 100%;
+    }
 }
 
 /* Layout: Max Width 380px */
@@ -601,6 +619,22 @@
         line-height: 40px;
         margin-left: 4px;
     }
+
+    .ams-login-2{
+        padding: 0;
+    }
+
+    .login-heading{
+        margin-bottom: 16px !important;
+        margin-top: 24px;
+    }
+
+    .ams-login-form{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* Layout: Max Width 320px */
@@ -619,6 +653,21 @@
 
     .cart-input input{
         margin-left: 0;
+    }
+
+    .ams-login-input{
+        padding: 0 16px;
+    }
+
+    .login-heading{
+        margin-bottom: 16px !important;
+        margin-top: 24px;
+    }
+
+    .forget-pass{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
 }
 
