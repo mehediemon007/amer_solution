@@ -258,10 +258,10 @@
         bottom: 0;
     }
 
-    /* .product-cart-2{
-        height: 100vh !important;
-        overflow:hidden;
-    } */
+    .cart-total-calc{
+        height: 40vh;
+        overflow-y: auto;
+    }
 }
 
 /* Layout: Max Width 991px */
