@@ -255,8 +255,7 @@ input::placeholder{
 .ams-login-input input{
   color: #243E8B;
   background-color: transparent;
-  padding-left:0;
-  padding-right: 0;
+  padding: 14px 0;
 }
 
 .forget-pass{
@@ -264,23 +263,41 @@ input::placeholder{
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  padding: 0;
   margin-bottom: 24px;
   box-shadow: none;
   color: #243E8B;
 }
 
-.forget-pass input{
-  width: 20px;
+.forget-pass label input {
+  appearance: none;
+  --webkit-appearance: none;
+  width: 18px;
+  height: 17px;
+  line-height: 17px;
+  padding: 0;
+  border: 1px solid #243E8B;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.forget-pass input[type="checkbox"]::after{
+  position: absolute;
+  content: "\f00c";
+  display: none;
+  font-size: 14px;
+  color: #243E8B;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.forget-pass input[type="checkbox"]:checked::after{
+  display: block;
 }
 
 .forget-pass a{
   font-size: 18px;
   color: #243E8B;
-}
-
-.forget-pass input{
-  border-color: #243E8B;
 }
 
 .submit-btn-2{
