@@ -232,8 +232,7 @@ input::placeholder{
 
 .ams-login-form{
   width: 600px;
-  height: 660px;
-  padding: 80px 50px;
+  padding: 50px;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(42, 45, 50, 0.15);
 }
