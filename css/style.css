@@ -238,18 +238,25 @@ input::placeholder{
 }
 
 .ams-login-input{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  grid-column-gap: 10px;
   padding: 0 24px;
+  padding-right: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  border: 1px solid #ced4da;
 }
 
 .ams-login-input input{
   color: #243E8B;
   background-color: transparent;
-  padding-left: 5px;
+  padding-left:0;
+  padding-right: 0;
 }
 
 .forget-pass{
@@ -261,6 +268,10 @@ input::placeholder{
   margin-bottom: 24px;
   box-shadow: none;
   color: #243E8B;
+}
+
+.forget-pass input{
+  width: 20px;
 }
 
 .forget-pass a{
