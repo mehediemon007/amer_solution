@@ -20,26 +20,33 @@
         toggle = $('.nav-toggle');
 
     dropDown.click(function(){
+
         $(this).next('.sub-menu').slideToggle("fast");
-        $(this).toggleClass('active');
+
+    })
+
+    $(".sidebar-menu li a").click(function(){
+        $("li a").removeClass("active");
+        $(this).addClass("active")
     })
 
     toggle.click(function(){
         sidebar.toggleClass('active')
     })
 
-    $(document).ready(function() {
+    if($("#supplier-table").length){
+
         $("#supplier-table").DataTable({
             responsive: true,
             scrollX: true
         });
-      });
+    }
 
-    $(document).ready(function() {
+    if($(".unit-select-box").length){
+
         $('.unit-select-box').select2();
-    });
-    
-
+    }
+        
 })(jQuery);
 
 function langSelect(){
@@ -119,61 +126,23 @@ function profileSelect(){
         }
     }
 
-    // Select Box
-
-    //  const selected = document.querySelector(".selected");
-    //  const optionsContainer = document.querySelector(".options-container");
-    //  const searchBox = document.querySelector(".search-box input");
- 
-    //  const optionsList = document.querySelectorAll(".option");
- 
-    // selected.addEventListener("click", () => {
-    //     optionsContainer.classList.toggle("active");
- 
-    //     searchBox.value = "";
-    //     filterList("");
- 
-    //     if (optionsContainer.classList.contains("active")) {
-    //         searchBox.focus();
-    //     }
-    // });
- 
-    // optionsList.forEach(o => {
-    //     o.addEventListener("click", () => {
-    //         selected.innerHTML = o.querySelector("label").innerHTML;
-    //         optionsContainer.classList.remove("active");
-    //     });
-    // });
- 
-    // searchBox.addEventListener("keyup", function(e) {
-    //     filterList(e.target.value);
-    // });
- 
-    // const filterList = searchTerm => {
-    //     searchTerm = searchTerm.toLowerCase();
-    //     optionsList.forEach(option => {
-    //         let label = option.firstElementChild.nextElementSibling.innerText.toLowerCase();
-    //         if (label.indexOf(searchTerm) != -1) {
-    //         option.style.display = "block";
-    //         } else {
-    //         option.style.display = "none";
-    //         }
-    //     });
-    // };
-
-
     // Get the products container
     var producttList = document.getElementsByClassName("product-list")
 
+    if(producttList.length > 0){
 
-    // Get all products with class="single-product" inside the container
-    var cartProducts = producttList[0].getElementsByClassName("single-product");
+        // Get all products with class="single-product" inside the container
 
-    // Loop through the products and add the count class to the current/clicked div
-    for (var i = 0; i < cartProducts.length; i++) {
-        cartProducts[i].addEventListener("click", function() {
-        this.className += " count";
-       });
+        var cartProducts = producttList[0].getElementsByClassName("single-product");
+
+        // Loop through the products and add the count class to the current/clicked div
+        for (var i = 0; i < cartProducts.length; i++) {
+            
+            cartProducts[i].addEventListener("click", function() {
+                this.className += " count";
+            });
+        }
+
     }
 
 })()
