@@ -89,21 +89,54 @@
                         <span class="search-close"><i class="fas fa-times"></i></span>
                     </div>
                 </span>
-                <div class="nav-item"><i class="far fa-bell"></i>
-                    <div class="ams-notification-widget">
+                <div onClick="notifySelect()" class="nav-item"><i class="far fa-bell"></i>
+                    <div class="ams-notification-widget" id="notify-dropdown">
                         <div class="notify-title">
                             <h6>Notifications</h6>
                             <a href="#">Clear All</a>
                         </div>
                         <div class="notify-content">
                             <div class="single-notification">
-                                <div class="row">
+                                <div class="row flex-wrap">
                                     <div class="col-2">
-                                        <img src="images/notify-img.jpg" alt="Notification">
+                                        <a href=""><img src="images/notify-img.jpg" alt="Notification"></a>
                                     </div>
                                     <div class="col-10">
-                                        <p>Mehedi Hasan Emon</p>
-                                        <p>A new message For you. It's very urgent..</p>
+                                        <a href="#"><h6>Mehedi Hasan Emon</h6></a>
+                                        <a href="#"><p>A new message For you. It's very urgent..</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-notification">
+                                <div class="row flex-wrap">
+                                    <div class="col-2">
+                                        <a href=""><img src="images/notify-img.jpg" alt="Notification"></a>
+                                    </div>
+                                    <div class="col-10">
+                                        <a href="#"><h6>Mehedi Hasan Emon</h6></a>
+                                        <a href="#"><p>A new message For you. It's very urgent..</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-notification">
+                                <div class="row flex-wrap">
+                                    <div class="col-2">
+                                        <a href=""><img src="images/notify-img.jpg" alt="Notification"></a>
+                                    </div>
+                                    <div class="col-10">
+                                        <a href="#"><h6>Mehedi Hasan Emon</h6></a>
+                                        <a href="#"><p>A new message For you. It's very urgent..</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-notification">
+                                <div class="row flex-wrap">
+                                    <div class="col-2">
+                                        <a href=""><img src="images/notify-img.jpg" alt="Notification"></a>
+                                    </div>
+                                    <div class="col-10">
+                                        <a href="#"><h6>Mehedi Hasan Emon</h6></a>
+                                        <a href="#"><p>A new message For you. It's very urgent..</p></a>
                                     </div>
                                 </div>
                             </div>
@@ -114,14 +147,22 @@
                     </div>
                 </div>
                 <span class="nav-item"><i class="fas fa-shopping-cart"></i></span>
-                <div class="ams-admin">                               
-                    <div class="admin-image">
-                    <img src="images/admin.jpg" alt="admin">
-                    <i class="fas fa-circle"></i>
+                <div class="ams-admin-wpr">
+                    <div onclick="profileSelect()" class="ams-admin">                               
+                        <div class="admin-image">
+                            <img src="images/admin.jpg" alt="admin">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="admin-details">
+                            <h6 class="mb-0">Akash Mia</h6>
+                            <p>Admin</p>
+                        </div>
                     </div>
-                    <div class="admin-details">
-                        <h6 class="mb-0">Akash Mia</h6>
-                        <p>Admin</p>
+                    <div id="profile-dropdown" class="dropdown-content">
+                        <a href="#"><i class="far fa-edit"></i> Edit Profile</a>
+                        <a href="#"><i class="far fa-bell"></i> Notification</a>
+                        <a href="#"><i class="fas fa-exclamation-circle"></i> Change Password</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </div>
                 </div>
                 <span class="nav-item menu-stack"><i class="fas fa-ellipsis-v"></i></span>
@@ -133,7 +174,7 @@
 
             <div class="dragable-list p-4">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-xl-3 col-md-5">
                         <div class="ams-category-widget">
                             <h4>Category</h4>
                             <ul class="category-menu mt-4">
@@ -154,7 +195,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-xl-9 col-md-7 mt-4 mt-md-0">
                         <div class="nested bg-white p-4">
                             <div class="item">
                               Electronics
