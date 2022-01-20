@@ -605,18 +605,10 @@ input::placeholder{
 }
 
 .ams-notification-widget{
-  position: absolute;
   top: 150%;
   left: -200px;
   width: max-content;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 16px;
-  transform: translateY(30%);
-  transition: .2s;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 10;
 }
 
 .notify-title{
@@ -651,8 +643,14 @@ input::placeholder{
   border-radius: 50%;
 }
 
-.single-notification a{
+.dropdown-content.ams-notification-widget a{
   color: #000;
+  padding: 0;
+}
+
+.single-notification .notify-msg{
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .notify-footer{
