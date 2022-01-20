@@ -22,10 +22,6 @@ h1,h2,h3,h4,h5,h6,p{
   margin-bottom: 0;
 }
 
-h2{
-  font-size: 26px;
-}
-
 ul{
   margin: 0;
   padding: 0;
@@ -367,11 +363,11 @@ input::placeholder{
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
 }
 
-.sidebar-menu li{
+.ams-sidebar li{
   position: relative;
 }
 
-.sidebar-menu li a{
+.ams-sidebar li a{
   position: relative;
   display: flex;
   align-items: center;
@@ -384,15 +380,15 @@ input::placeholder{
   transition: .3s;
 }
 
-.sidebar-menu li:first-child a{
+.ams-sidebar li:first-child a{
   margin-top: 0;
 }
 
-.sidebar-menu li a:hover{
+.ams-sidebar li a:hover{
   color: #1A53BD;
 }
 
-.sidebar-menu li a.active{
+.ams-sidebar li a.active{
   border-left-color: #1A53BD;
   color: #1A53BD;
   background-color: #EBF0FF;
