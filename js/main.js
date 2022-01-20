@@ -19,7 +19,8 @@
         dashboard = $('.dashboard-content'),
         toggle = $('.nav-toggle');
 
-    dropDown.click(function(){
+    dropDown.click(function(e){
+        
         $(this).next('.sub-menu').slideToggle("fast");
         $(this).toggleClass('active');
     })

@@ -432,6 +432,10 @@ input::placeholder{
   transform: .3s linear;
 }
 
+.has-children.active + .sub-menu{
+  display: block;
+}
+
 .ams-sidebar.active .sidebar-menu .sub-menu{
   position: absolute;
   top: 0;
