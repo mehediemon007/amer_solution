@@ -30,6 +30,30 @@
 
 /* Layout: Max 1400px  */
 @media only screen and (max-width: 1400px) {
+
+    .info-box-content h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+
+    .table>:not(caption)>*>*{
+        font-size: 12px;
+    }
+
+    .dataTable-info-wpr{
+        padding: 16px 0;
+    }
     
     #supplierList{
         display: block;

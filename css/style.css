@@ -336,7 +336,7 @@ input::placeholder{
 }
 
 .ams-sidebar.active{
-  width: 60px;
+  width: 55px;
 }
 
 
@@ -350,7 +350,7 @@ input::placeholder{
 
 .brand-logo .brand-image{
   display: inline-block;
-  width: 60px;
+  width: 50px;
   height: 50px;
   text-align: center;
   line-height: 50px;
@@ -402,7 +402,7 @@ input::placeholder{
 .sidebar-menu li .nav-icon {
   font-size: 16px;
   height: 24px;
-  min-width: 60px;
+  min-width: 55px;
   line-height: 24px;
   text-align: center;
 }
@@ -492,8 +492,8 @@ input::placeholder{
 }
 
 .ams-sidebar.active + .ams-main-content{
-  left: 60px;
-  width: calc(100% - 60px);
+  left: 55px;
+  width: calc(100% - 55px);
 }
 
 .ams-nav-wpr{
@@ -569,7 +569,7 @@ input::placeholder{
 }
 
 .nav-right .nav-item i{
-  font-size: 20px;
+  font-size: 18px;
   color: #B5AFC7;
   cursor: pointer;
 }
@@ -880,7 +880,7 @@ input::placeholder{
   display: inline-block;
   font-size: 16px;
   color: #243E8B;
-  padding: 8px 16px;
+  padding: 5px 10px;
   border: 1px solid #DDDDDD;
   border-radius: 5px;
 }
@@ -984,7 +984,7 @@ table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after{
 
 .dataTable-pagination ul a{
   display: inline-block;
-  padding: 6px 12px;
+  padding: 5px 10px;
   color: #B3B6BE;
   border: 1px solid transparent;
 }
@@ -994,6 +994,10 @@ table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after{
   color: #fff !important;
   background-color: #243E8B;
   border-color: transparent !important;
+}
+
+.panel-title{
+  font-size: 16px;
 }
 
 .page-link{
@@ -1048,7 +1052,7 @@ a:focus{
 }
 
 .input-verticle .add-input{
-  top: 32px !important;
+  top: 29px !important;
 }
 
 .add-input{
