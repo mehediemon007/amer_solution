@@ -60,12 +60,29 @@
         font-size: 14px;
     }
 
+    .ams-sidebar li a{
+        padding: 6px 0;
+    }
+
+    .sidebar-menu .nav-expand i{
+        top: 10px;
+    }
+
     .table>:not(caption)>*>*{
-        font-size: 12px;
+        font-size: 13px;
+    }
+
+    .sub-menu li a::before{
+        top: 15px;
+        left: -10px;
     }
 
     .dataTable-info-wpr{
         padding: 16px 0;
+    }
+
+    .sidebar-menu .sub-menu{
+        padding-left: 45px;
     }
     
     #supplierList{

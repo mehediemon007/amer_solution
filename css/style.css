@@ -350,6 +350,7 @@ input::placeholder{
   line-height: 55px;
   background-color: #fff;
   padding:0 10px;
+  box-shadow: 2px 1px 5px rgb(0 0 0 / 10%);
   overflow: hidden;
   transition: .3s linear;
 }
@@ -505,6 +506,7 @@ input::placeholder{
   position: absolute;
   left: 220px;
   width: calc(100% - 220px);
+  background-color: #f1f3f6;
   transition: all .3s;
 }
 
@@ -518,8 +520,9 @@ input::placeholder{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
   padding: 0 30px;
-  /* box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.08); */
+  margin-bottom: 24px;
   box-shadow: 4px 1px 5px rgb(0 0 0 / 10%);
 }
 
@@ -764,7 +767,7 @@ input::placeholder{
 
 .ams-main-content-wpr{
   background-color: #f1f3f6;
-  padding: 24px 24px 0;
+  padding: 0 24px;
 }
 
 .ams-main-content-wpr .container{
@@ -1164,7 +1167,7 @@ a:focus{
   background-color: #243E8B;
   color: #fff;
   font-size: 14px;
-  padding: 4px 8px;
+  padding: 5px 12px;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -1177,11 +1180,12 @@ a:focus{
 
 .action-dropdown .dropdown-content {
   margin-top: 10px;
-  left: -50%;
+  right: 0;
   background-color: #fff;
   min-width: 150px;
   border-radius: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1;
 }
 
 .action-dropdown .dropdown-content a:hover{
@@ -1193,6 +1197,7 @@ a:focus{
 	cursor: pointer;
 	display: inline-block;
 }
+
 .toggle-switch {
 	display: inline-block;
 	background: #ccc;
@@ -1707,9 +1712,14 @@ a:focus{
   background-color: #00a65a;;
 }
 
-td i{
-  color: #ED4C5C;
-  vertical-align: baseline;
+.edit-icons i{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-right: -4px;
 }
 
 .total-table td{
