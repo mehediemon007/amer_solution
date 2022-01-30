@@ -336,7 +336,7 @@ input::placeholder{
 }
 
 .ams-sidebar.active{
-  width: 65px;
+  width: 60px;
 }
 
 
@@ -350,9 +350,9 @@ input::placeholder{
   transition: .3s linear;
 }
 
-/* .ams-sidebar.active .brand-logo{
-  padding: 0 10px;
-} */
+.ams-sidebar.active .brand-logo{
+  padding-left: 8px;
+}
 
 .brand-logo .brand-image{
   display: inline-block;
@@ -411,6 +411,11 @@ input::placeholder{
   min-width: 65px;
   line-height: 24px;
   text-align: center;
+  transition: .3s linear;
+}
+
+.ams-sidebar.active li .nav-icon{
+  min-width: 55px;
 }
 
 .sidebar-menu .nav-expand i{
@@ -500,8 +505,8 @@ input::placeholder{
 }
 
 .ams-sidebar.active + .ams-main-content{
-  left: 65px;
-  width: calc(100% - 65px);
+  left: 55px;
+  width: calc(100% - 55px);
 }
 
 .ams-nav-wpr{
