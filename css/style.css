@@ -336,17 +336,23 @@ input::placeholder{
 }
 
 .ams-sidebar.active{
-  width: 55px;
+  width: 65px;
 }
 
 
 
 .ams-sidebar .brand-logo{
-  height: 65px;
-  line-height: 65px;
+  height: 55px;
+  line-height: 55px;
   background-color: #fff;
+  padding:0 10px;
   overflow: hidden;
+  transition: .3s linear;
 }
+
+/* .ams-sidebar.active .brand-logo{
+  padding: 0 10px;
+} */
 
 .brand-logo .brand-image{
   display: inline-block;
@@ -377,10 +383,10 @@ input::placeholder{
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  font-size: 14px;
-  color: #444;
+  font-size: 13px;
+  color: #63747c;
   padding: 10px 0;
-  margin-top:5px;
+  margin-top:3px;
   border-left: 3px solid transparent;
   transition: .3s;
 }
@@ -390,19 +396,19 @@ input::placeholder{
 }
 
 .ams-sidebar li a:hover{
-  color: #1A53BD;
+  color: #af126e;
 }
 
 .ams-sidebar li a.active{
-  border-left-color: #1A53BD;
-  color: #1A53BD;
-  background-color: #EBF0FF;
+  border-left-color: #af126e;
+  color: #af126e;
+  background-color: #e9f7f0;
 }
 
 .sidebar-menu li .nav-icon {
-  font-size: 16px;
+  font-size: 15px;
   height: 24px;
-  min-width: 55px;
+  min-width: 65px;
   line-height: 24px;
   text-align: center;
 }
@@ -432,8 +438,9 @@ input::placeholder{
   position: relative;
   display: none;
   color: #f4f4f5;
-  background-color: #f1f3f6;
-  padding-left: 30px;
+  /* background-color: #f1f3f6; */
+  background-color: #e9f7f066;
+  padding-left: 40px;
   transform: .3s linear;
 }
 
@@ -446,6 +453,7 @@ input::placeholder{
   top: 0;
   left: 97%;
   border-radius: 0 5px 5px 0;
+  background-color: #e9f7f0;
   z-index: 1;
 }
 
@@ -454,7 +462,7 @@ input::placeholder{
   content: "";
   width:1px;
   height: 100%;
-  left: 24px;
+  left: 32px;
   background-color: #777;
 }
 
@@ -492,17 +500,18 @@ input::placeholder{
 }
 
 .ams-sidebar.active + .ams-main-content{
-  left: 55px;
-  width: calc(100% - 55px);
+  left: 65px;
+  width: calc(100% - 65px);
 }
 
 .ams-nav-wpr{
-  height: 65px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.08); */
+  box-shadow: 4px 1px 5px rgb(0 0 0 / 10%);
 }
 
 .nav-toggle{
