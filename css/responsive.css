@@ -18,8 +18,21 @@
         margin-right: 0;
     }
 
+    .single-info-box,
+    .single-stat-box{
+        padding: 16px;
+    }
+
+    .single-info-box .info-box-icon{
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px;
+    }
+
     .single-info-box{
-        padding: 20px 16px;
+        grid-template-columns: 60px 1fr;
+        grid-column-gap: 24px;
+        
     }
 
     .info-box-content h1{

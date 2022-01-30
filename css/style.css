@@ -798,7 +798,7 @@ input::placeholder{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 18px;
+  padding: 20px 16px;
   border-radius: 5px;
   margin-bottom: 24px;
 }
