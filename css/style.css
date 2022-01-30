@@ -1722,6 +1722,14 @@ a:focus{
   margin-right: -4px;
 }
 
+.edit-icons i:first-child{
+  background-color: #ffc107;
+}
+
+.edit-icons i:last-child{
+  background-color: #0d6efd;
+}
+
 .total-table td{
   padding: 4px 0;
 }
