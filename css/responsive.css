@@ -24,14 +24,14 @@
     }
 
     .single-info-box .info-box-icon{
-        height: 60px;
-        font-size: 24px;
-        line-height: 60px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
     }
 
     .single-info-box{
-        grid-template-columns: 60px 1fr;
-        grid-column-gap: 24px;
+        grid-template-columns: 50px 1fr;
+        grid-column-gap: 20px;
         
     }
 
@@ -45,11 +45,11 @@
 @media only screen and (max-width: 1400px) {
 
     .info-box-content h1{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     h2{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     h5{
