@@ -65,7 +65,8 @@
     }
 
     .sidebar-menu .nav-expand i{
-        top: 10px;
+        top: 11px;
+        font-size: 14px;
     }
 
     .table>:not(caption)>*>*{
