@@ -454,7 +454,7 @@ input::placeholder{
   color: #f4f4f5;
   /* background-color: #f1f3f6; */
   background-color: #e9f7f066;
-  padding-left: 40px;
+  padding: 0 10px 0 40px;
   transform: .3s linear;
 }
 
