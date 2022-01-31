@@ -18,7 +18,7 @@
     .ams-sidebar.active .has-menu:hover > .sub-menu{
         display: block;
     }
-    
+
  }
 
  /* Layout: Max 1600px  */
@@ -118,6 +118,10 @@
     .product-list .single-product .product-image {
         padding: 5px 10px;
     }
+
+    .login-heading img{
+        max-width: 250px;
+      }
 }
 
 /* Layout: Max Width 1300px */
