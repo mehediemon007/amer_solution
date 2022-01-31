@@ -21,11 +21,24 @@
 
     dropDown.click(function(e){
 
-        $(this).next('.sub-menu').slideToggle("fast");
-        $(this).toggleClass('active');
+        if($(window).width() > 1200){
+
+            if($(".ams-sidebar").hasClass("active")){
+                return false
+            }else{
+
+                $(this).next('.sub-menu').slideToggle("fast");
+                $(this).toggleClass('active');
+            }
+            
+        }else{
+            $(this).next('.sub-menu').slideToggle("fast");
+            $(this).toggleClass('active');
+        }
     })
     
     toggle.click(function(){
+
         sidebar.toggleClass('active')
     })
 
