@@ -12,6 +12,15 @@
  *
  **/
 
+ /* Layout: Min 1201px */
+ @media only screen and (min-width:1201px){
+
+    .ams-sidebar.active .has-menu:hover > .sub-menu{
+        display: block;
+    }
+    
+ }
+
  /* Layout: Max 1600px  */
 @media only screen and (max-width: 1600px) {
     .ams-admin{

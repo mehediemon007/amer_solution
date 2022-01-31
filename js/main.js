@@ -20,11 +20,11 @@
         toggle = $('.nav-toggle');
 
     dropDown.click(function(e){
-        
+
         $(this).next('.sub-menu').slideToggle("fast");
         $(this).toggleClass('active');
     })
-
+    
     toggle.click(function(){
         sidebar.toggleClass('active')
     })
@@ -74,13 +74,15 @@ function notifySelect(){
     }
 
     window.onclick = function(event) {
-        if ((!event.target.matches('.dropbtn')) && (!event.taget.matches(".ams-admin"))) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+        if(event.length){
+            if ((!event.target.matches('.dropbtn')) && (!event.taget.matches(".ams-admin"))) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
                 }
             }
         }
