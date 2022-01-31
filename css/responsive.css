@@ -17,6 +17,30 @@
 
     .ams-sidebar.active .has-menu:hover > .sub-menu{
         display: block !important;
+        min-width: 150px;
+        padding: 8px 0 0 0;
+        box-shadow: 2px 2px 4px rgb(0 0 0 / 8%);
+        text-align: center;
+    }
+
+    .ams-sidebar.active .sub-menu::before,
+    .ams-sidebar.active .sub-menu li a::before{
+        content: none;
+    }
+
+    .ams-sidebar.active .sub-menu li a{
+        justify-content: center;
+    }
+
+    .menu-name{
+        display: none;
+    }
+
+    .ams-sidebar.active .menu-name{
+        display: block;
+        font-weight: 700;
+        border-bottom: 1px solid rgba(0, 0, 0 , .2);
+        text-transform: uppercase;
     }
 
  }

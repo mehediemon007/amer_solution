@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/tagsinput.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -38,6 +39,7 @@
             <li><a href="#" class="active"><i class="fas fa-columns nav-icon"></i><span>Dashboard</span></a></li>
             <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-truck nav-icon"></i><span>Supplier</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
                 <ul class="sub-menu">
+                    <li class="menu-name"><a href="supplier-list.html">Supplier</a></li>
                     <li><a href="supplier-list.html">Supplier List</a></li>
                     <li class="has-menu"><a href="#" class="has-children">Add Supplier<span class="nav-expand"><i class="fas fa-angle-right"></i> </span></a>
                         <ul class="sub-menu">
@@ -49,6 +51,7 @@
             </li>
             <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-truck nav-icon"></i><span>Product</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
                 <ul class="sub-menu">
+                    <li class="menu-name"><a href="supplier-list.html">Product</a></li>
                     <li><a href="category-sidebar.html">Add Category</a></li>
                     <li><a href="dragable-list.html">Category List</a></li>
                     <li><a href="#">Add Unit</a></li>
@@ -210,7 +213,6 @@
                                             <option value="WY">Wyoming</option>
                                         </select>
                                     </fieldset> 
-                                    </fieldset>
                                     <fieldset class="ams-input input-verticle">
                                         <label for="unit-select-box">Unit</label>
                                         <select class="unit-select-box" name="state">
@@ -219,6 +221,10 @@
                                             <option value="WY">Wyoming</option>
                                             <option value="WY">Wyoming</option>
                                         </select>
+                                    </fieldset>
+                                    <fieldset class="ams-input input-verticle">
+                                        <label for="name">Input Tags :</label>
+                                        <input type="text" id="name" placeholder="Input Tags" data-role="tagsinput">
                                     </fieldset>
                                 </div>
                                 <fieldset class="ams-input input-verticle mt-40">
@@ -252,6 +258,7 @@
     <script src="js/modernizr-3.5.0.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/tagsinput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
