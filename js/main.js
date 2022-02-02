@@ -166,6 +166,60 @@ function notifySelect(){
         dragula([].slice.apply(dragList));
 
     }
+
+    // Profile Pic
+
+    $(document).ready(function() {
+
+    
+        var readURL = function(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+    
+                reader.onload = function (e) {
+                    $('.profile-pic').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        
+    
+        $(".file-upload").on('change', function(){
+            readURL(this);
+        });
+        
+        $(".upload-image").on('click', function() {
+           $(".file-upload").click();
+        });
+
+        $(".upload-button").on('click', function() {
+            $(".ams-file-modal").addClass("show")
+        });
+
+    });
+
+    if($(".close-modal").length){
+
+        $(".close-modal").on("click",function(){
+            
+            $(".ams-file-modal").removeClass("show")
+        })
+    }
+
+    const loadImages = document.querySelectorAll(".image-container .single-image");
+
+    // if(loadImages != null){
+
+    //     for(let i=0; i< loadImages.length ; i++){
+    //         loadImages[i].addEventListener("click",function(){
+    //             this.classList.add("show")
+    //         })
+    //     }
+    // }
+
+    console.log(loadImages)
+
 })()
    
 

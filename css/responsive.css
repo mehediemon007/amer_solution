@@ -94,7 +94,7 @@
     }
 
     .ams-sidebar li a{
-        padding: 6px 0;
+        padding: 7px 0;
     }
 
     .sidebar-menu .nav-expand i{
@@ -188,6 +188,14 @@
 
 /* Layout: Max 1200px  */
 @media only screen and (max-width: 1200px) {
+
+    .ams-sidebar .brand-logo{
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+    }
+
+    .ams-sidebar li:first-child a{
+        margin-top: 0;
+    }
 
     .ams-sidebar{
         position: fixed;
