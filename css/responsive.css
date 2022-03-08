@@ -207,6 +207,7 @@
 
     .pos-sidebar{
         top: 0;
+        display: none;
     }
 
     .ams-sidebar.active{
