@@ -205,11 +205,15 @@
         transition: .3s;
     }
 
+    .pos-sidebar{
+        top: 0;
+    }
+
     .ams-sidebar.active{
         width: 220px;
         left: 0;
     }
-
+    
     .ams-sidebar .sidebar-menu{
         margin-top: -1px;
     }
