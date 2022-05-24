@@ -1085,6 +1085,7 @@ a:focus{
 .ams-customer-add-form .input-group{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 35px;
 }
 
 .input-group.input-verticle{
@@ -1094,10 +1095,8 @@ a:focus{
 .ams-input{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: .7fr 2fr;
   align-items: center;
-  text-align: right;
-  grid-column-gap: 30px;
 }
 
 .input-verticle{
