@@ -43,6 +43,10 @@
         text-transform: uppercase;
     }
 
+    .ams-login-form{
+        width: 55%;
+    }
+
  }
 
  /* Layout: Max 1600px  */
@@ -283,6 +287,10 @@
 /* Layout: Max Width 1099px */
 @media only screen and (max-width:1099px){
 
+    .ams-login-form{
+        width: 70%;
+    }
+
     .nav-item:last-child i{
         display: block;
     }
@@ -371,6 +379,10 @@
 
 /* Layout: Max Width 991px */
 @media only screen and (max-width:991px){
+
+    .ams-login-form{
+        width: 90%;
+    }
 
     .ams-customer-add-form .input-group.input-verticle{
         grid-template-columns: repeat(2,1fr);
@@ -543,16 +555,19 @@
         left: auto;
         right: 5%;
     }
-
-    .ams-login-form{
-        width: auto;
-        height: auto;
-        min-height: max-content;
-    }
 }
 
 /* Layout: Max Width 480px */
 @media only screen and (max-width:480px){
+
+    .ams-login-form{
+        grid-template-columns: 1fr;
+    }
+
+    .form-image{
+        display: none;
+    }
+    
     .add-btn{
         padding: 7px 14px;
     }

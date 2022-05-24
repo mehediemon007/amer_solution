@@ -139,7 +139,7 @@ i{
 }
 
 input{
-  font-size: 14px;
+  font-size: 13px;
   color: #243E8B7A;
   padding: 16px 32px;
   border-radius: 5px;
@@ -240,10 +240,22 @@ input::placeholder{
 }
 
 .ams-login-form{
-  /* width: 600px; */
-  padding: 50px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 30px;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(42, 45, 50, 0.15);
+}
+
+.form-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-image img{
+  width: 100%;
 }
 
 .login-heading img{
@@ -275,7 +287,7 @@ input::placeholder{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 24px;
   box-shadow: none;
   color: #243E8B;
@@ -284,9 +296,9 @@ input::placeholder{
 .forget-pass label input {
   appearance: none;
   --webkit-appearance: none;
-  width: 18px;
-  height: 17px;
-  line-height: 17px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
   padding: 0;
   border: 1px solid #243E8B;
   border-radius: 4px;
@@ -309,7 +321,7 @@ input::placeholder{
 }
 
 .forget-pass a{
-  font-size: 16px;
+  font-size: 15px;
   color: #243E8B;
 }
 
@@ -1274,7 +1286,7 @@ a:focus{
 /* Footer */
 
 .ams-footer{
-  padding: 32px 0;
+  padding: 8px 0;
 }
 
 .footer-btn{
