@@ -482,14 +482,14 @@ input::placeholder{
   z-index: 1;
 }
 
-.sidebar-menu .sub-menu::before{
+/* .sidebar-menu .sub-menu::before{
   position: absolute;
   content: "";
   width:1px;
   height: 100%;
   left: 32px;
   background-color: #777;
-}
+} */
 
 .sub-menu li a{
   position: relative;
@@ -499,7 +499,7 @@ input::placeholder{
   color: #777;
 }
 
-.sub-menu li a::before{
+/* .sub-menu li a::before{
   position: absolute;
   content: "";
   left: -5px;
@@ -508,7 +508,7 @@ input::placeholder{
   height: 1px;
   background-color:  #777;
 
-}
+} */
 
 .sub-menu li a.active{
   background-color: transparent;

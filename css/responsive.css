@@ -110,10 +110,10 @@
         font-size: 13px;
     }
 
-    .sub-menu li a::before{
+    /* .sub-menu li a::before{
         top: 15px;
         left: -10px;
-    }
+    } */
 
     .dataTable-info-wpr{
         padding: 16px 0;
