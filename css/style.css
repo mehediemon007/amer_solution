@@ -1022,6 +1022,10 @@ table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after{
   color: #5a5959;
 }
 
+td{
+  vertical-align: middle;
+}
+
 #supplier-table_wrapper .row:first-child{
   padding: 16px 0;
 }
@@ -1079,7 +1083,7 @@ a:focus{
 /* ----- Add Customer ----- */
 
 .ams-customer-add-form{
-  padding: 40px 5px;
+  padding: 16px 5px;
 }
 
 .ams-customer-add-form .input-group{
@@ -1089,7 +1093,7 @@ a:focus{
 }
 
 .input-group.input-verticle{
-  grid-column-gap: 100px;
+  grid-column-gap: 24px;
 }
 
 .ams-input{
@@ -1908,6 +1912,7 @@ a:focus{
 
 .edit-icons i:last-child{
   background-color: #0d6efd;
+  margin-left: 8px;
 }
 
 .total-table td{
