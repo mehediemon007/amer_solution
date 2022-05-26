@@ -894,6 +894,7 @@ input::placeholder{
 .ams-panel-wpr{
   min-height: 90vh;
   background-color: #fff;
+  border-top: 3px solid #243E8B;
   border-radius: 5px;
   padding: 0 24px;
 }
