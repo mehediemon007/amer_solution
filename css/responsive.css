@@ -120,7 +120,11 @@
     }
 
     .sidebar-menu .sub-menu{
-        padding-left: 45px;
+        padding-left: 68px;
+    }
+
+    .sidebar-menu .sub-menu .sub-menu{
+        padding-left: 16px;
     }
     
     #supplierList{

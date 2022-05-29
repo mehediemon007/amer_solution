@@ -446,6 +446,10 @@ input::placeholder{
  transition: .3s;
 }
 
+.sub-menu .nav-expand i{
+  right: 10px;
+}
+
 .ams-sidebar.active .sidebar-menu .nav-expand i{
   visibility: hidden;
   opacity: 0;
@@ -1136,11 +1140,15 @@ a:focus{
   height: 38px;
   border: 1px solid rgba(221, 221, 221, 0.8);
   padding: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .add-btn{
   background-color: #00C908;
+  transition: .3s;
+}
+
+.add-btn:hover{
   box-shadow: 0px 4px 20px rgba(0, 201, 8, 0.7);
 }
 
@@ -1159,6 +1167,7 @@ a:focus{
   align-items: center;
   padding: 0 5px;
   border-color: rgba(221, 221, 221, 0.8);
+  margin-bottom: 60px;
 }
 
 .bootstrap-tagsinput .tag{
@@ -1321,8 +1330,12 @@ a:focus{
 
 .footer-btn{
   background-color: #ED4C5C;
-  box-shadow: 0px 4px 50px rgba(253, 101, 116, 0.7);
   margin-right: 45px;
+  transition: .3s;
+}
+
+.footer-btn:hover{
+  box-shadow: 0px 4px 50px rgba(253, 101, 116, 0.7);
 }
 
 .copyright a{
@@ -1535,6 +1548,7 @@ a:focus{
 .ams-input .select2-container .select2-selection--single{
   height: 38px;
   border: 1px solid rgba(221, 221, 221, 0.8);
+  margin-bottom: 8px;
 }
 
 .ams-input .select2-container--default .select2-selection--single .select2-selection__rendered{
@@ -1905,15 +1919,31 @@ a:focus{
   text-align: center;
   line-height: 30px;
   margin-right: -4px;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .edit-icons i:first-child{
+  color: #ffc107;
+  background-color: #ffc10770;
+  border: 1px solid #ffc107;
+}
+
+.edit-icons i:first-child:hover{
+  color: #fff;
   background-color: #ffc107;
 }
 
 .edit-icons i:last-child{
-  background-color: #0d6efd;
+  color: #0d6efd;
+  background-color: #0d6efd8a;
+  border: 1px solid #0d6efd;
   margin-left: 8px;
+}
+
+.edit-icons i:last-child:hover{
+  color: #fff;
+  background-color: #0d6efd;
 }
 
 .total-table td{
