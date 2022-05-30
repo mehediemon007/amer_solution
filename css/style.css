@@ -428,9 +428,10 @@ input::placeholder{
 .sidebar-menu li .nav-icon {
   font-size: 15px;
   height: 24px;
-  min-width: 65px;
+  min-width: 55px;
   line-height: 24px;
   text-align: center;
+  padding-left: 5px;
   transition: .3s linear;
 }
 
@@ -469,7 +470,7 @@ input::placeholder{
   color: #f4f4f5;
   /* background-color: #f1f3f6; */
   background-color: #e9f7f066;
-  padding: 0 10px 0 40px;
+  padding: 0 10px 0 45px;
   transform: .3s linear;
 }
 
@@ -893,6 +894,11 @@ input::placeholder{
  padding: 24px;
 }
 
+.chart-heading h5{
+  padding-bottom: 12px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
 /* ----- Supplier List ----- */
 
 .ams-panel-wpr{
@@ -1061,7 +1067,8 @@ td{
 }
 
 .panel-title{
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .page-link{
@@ -1137,7 +1144,8 @@ a:focus{
 
 .ams-input input{
   width: 100%;
-  height: 38px;
+  /* height: 38px; */
+  height: 3em;
   border: 1px solid rgba(221, 221, 221, 0.8);
   padding: 16px;
   margin-bottom: 8px;
@@ -1154,12 +1162,13 @@ a:focus{
 
 .submit-btn{
   color: #fff;
-  background-color: #243E8B;
+  background-color: rgb(36 62 139 / 90%);
   transition: .3s;
 }
 
 .submit-btn:hover{
   color: #fff;
+  background-color: rgb(36 62 139 / 100%);
 }
 
 .bootstrap-tagsinput{
@@ -1919,14 +1928,14 @@ a:focus{
   text-align: center;
   line-height: 30px;
   margin-right: -4px;
+  border-radius: 3px;
   transition: .3s;
   cursor: pointer;
 }
 
 .edit-icons i:first-child{
-  color: #ffc107;
-  background-color: #ffc10770;
-  border: 1px solid #ffc107;
+  color: #cb9904;
+  background-color: #ffd86470;
 }
 
 .edit-icons i:first-child:hover{
@@ -1936,8 +1945,7 @@ a:focus{
 
 .edit-icons i:last-child{
   color: #0d6efd;
-  background-color: #0d6efd8a;
-  border: 1px solid #0d6efd;
+  background-color: #619df58a;
   margin-left: 8px;
 }
 
