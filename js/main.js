@@ -53,7 +53,20 @@
     if($(".unit-select-box").length){
         
         $('.unit-select-box').select2();
-    } 
+    }
+    
+    // Advanced Search Box
+
+    if($(".advanced-btn").length){
+
+        $(".advanced-btn").on("click",function(){
+
+            if($(".panel-advanced-search").length){
+                $(".panel-advanced-search").slideToggle("300")
+            }
+        })
+        
+    }
 
 })(jQuery);
 
@@ -217,9 +230,7 @@ function notifySelect(){
     //         })
     //     }
     // }
-
-    console.log(loadImages)
-
+    
     // Phone Input
 
     var input = document.querySelector("#phone"),

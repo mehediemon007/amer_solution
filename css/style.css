@@ -2185,18 +2185,26 @@ a:focus{
   margin: 10px 0;
 }
 
-.panel-search-box form{
+.panel-search form{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   grid-column-gap: 24px;
   align-items: center;
 }
 
-.panel-search-box input{
+.panel-advanced-search form{
+  grid-template-columns: repeat(4,1fr);
+}
+
+.panel-advanced-search{
+  display: none;
+}
+
+.panel-search input{
   height: 2.2em;
 }
 
-.panel-search-box select{
+.panel-search select{
   height: 2.5em;
   font-size: 13px;
   padding: 4px 2.25rem 4px .75rem;
