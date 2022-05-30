@@ -474,6 +474,11 @@ input::placeholder{
   transform: .3s linear;
 }
 
+.sidebar-menu .sub-menu .sub-menu{
+  padding-left: 22px;
+  background-color: transparent;
+}
+
 .has-children.active + .sub-menu{
   display: block;
 }
@@ -498,7 +503,8 @@ input::placeholder{
 
 .sub-menu li a{
   position: relative;
-  padding: 5px 20px 5px 10px;
+  padding: 10px 20px 10px 10px;
+  margin-top: 0;
   border: none;
   white-space: nowrap;
   color: #777;
@@ -561,14 +567,27 @@ input::placeholder{
   font-size: 13px;
   font-weight: 500;
   color: #243E8B;
+  background-color: transparent;
   border: 1px solid #243E8B;
   border-radius: 4px;
   padding: 3px 5px;
   margin-right: 5px;
+  transition: .3s;
+}
+
+.main-nav li a:hover{
+  color: #fff;
+  background-color: #243E8B;
 }
 
 .sub-menu li a{
   border-bottom: none;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .nav-right{
@@ -781,6 +800,56 @@ input::placeholder{
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.main-navigation li{
+  display: inline-block;
+}
+
+.main-navigation li:hover > .sub-menu{
+  opacity: 1;
+  visibility: visible;
+} 
+
+.main-navigation li a{
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  color: #243E8B;
+  padding: 17px 8px;
+}
+
+.main-navigation .sub-menu{
+  position: absolute;
+  min-width: 135px;
+  background-color: #fff;
+  padding: 4px 0;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 20;
+  transition: .3s;
+}
+
+.main-navigation .sub-menu li{
+  position: relative;
+  display: block;
+  padding: 0 10px;
+}
+
+.main-navigation .sub-menu li a{
+  display: block;
+  padding: 5px 0;
+}
+
+.main-navigation .sub-menu li.has-menu a{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation .sub-menu li.has-menu:hover > ul{
+  top:0;
+  left: 100%;
 }
 
 /* ----- Dashboard Boxes ----- */
@@ -1149,6 +1218,14 @@ a:focus{
   border: 1px solid rgba(221, 221, 221, 0.8);
   padding: 16px;
   margin-bottom: 8px;
+  box-shadow: none;
+  transition: .3s;
+}
+
+.ams-input input:focus,
+.panel-search-box select:focus{
+  border: 1px solid #243E8B;
+  box-shadow: 0 3px 10px 0 rgb(34 41 47 / 10%);
 }
 
 .add-btn{
@@ -2096,6 +2173,62 @@ a:focus{
   padding: 10px 16px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   cursor: pointer;
+}
+
+/* Panel Search Box */
+
+.panel-search-box{
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-bottom: 1px dashed #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.panel-search-box form{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-column-gap: 24px;
+  align-items: center;
+}
+
+.panel-search-box input{
+  height: 2.2em;
+}
+
+.panel-search-box select{
+  height: 2.5em;
+  font-size: 13px;
+  padding: 4px 2.25rem 4px .75rem;
+  border: 1px solid #DDDDDD;
+  margin-bottom: 8px;
+}
+
+.search-btns button{
+  width: 48%;
+  height: 2.2em;
+  background-color: #FFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  outline: none;
+  padding: 2px;
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.iti__flag{
+  background-image: url("../images/flag.png");
+}
+
+.iti input{
+  margin-bottom: 8px !important;
+}
+
+.iti__selected-flag{
+  height: 2.3em;
+  padding-left: 10px;
 }
 
 

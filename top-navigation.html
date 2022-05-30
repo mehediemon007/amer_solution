@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Supplier List</title>
+    <title>Top Navigation</title>
 
     <!-- Inject:css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="css/inttel.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />  <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -34,11 +33,11 @@
         </div>
         <ul class="sidebar-menu">
             <li><a href="#" class="active"><i class="fas fa-columns nav-icon"></i><span>Dashboard</span></a></li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-user-tie nav-icon"></i><span>Supplier</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
+            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-truck nav-icon"></i><span>Supplier</span><span class="nav-expand"><i class="fas fa-angle-down"></i></span></a>
                 <ul class="sub-menu">
                     <li class="menu-name"><a href="supplier-list.html">Supplier</a></li>
                     <li><a href="supplier-list.html">Supplier List</a></li>
-                    <li class="has-menu"><a href="#" class="has-children">Add Supplier<span class="nav-expand"><i class="fas fa-angle-right"></i> </span></a>
+                    <li class="has-menu"><a href="#" class="has-children">Add Supplier<span class="nav-expand"><i class="fas fa-angle-down"></i> </span></a>
                         <ul class="sub-menu">
                             <li><a href="supplier-list.html">Supplier List</a></li>
                             <li><a href="add-supplier.html">Add Supplier</a></li>
@@ -46,133 +45,12 @@
                     </li>
                 </ul>
             </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fa fa-address-book nav-icon"></i><span>Customer</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
+            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-truck nav-icon"></i><span>Product</span><span class="nav-expand"><i class="fas fa-angle-down"></i></span></a>
                 <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Customer List</a></li>
-                    <li><a href="category-sidebar.html">Due Received List</a></li>
-                    <li><a href="dragable-list.html">Business Due Pay List</a></li>
-                    <li><a href="#">Customer Group</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fa fas fa-cubes nav-icon"></i><span>Products</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Product List</a></li>
-                    <li><a href="category-sidebar.html">Add Product</a></li>
-                    <li><a href="dragable-list.html">Unit</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Sub Category</a></li>
-                    <li><a href="#">Child Category</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Print Barcode / Label</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-shopping-cart nav-icon"></i><span>Purchase</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Add Purchase </a></li>
+                    <li class="menu-name"><a href="supplier-list.html">Product</a></li>
                     <li><a href="category-sidebar.html">Add Category</a></li>
-                    <li><a href="dragable-list.html">Manage Purchase</a></li>
-                    <li><a href="#">Add Purchase Order</a></li>
-                    <li><a href="#">Manage Purchase Order</a></li>
-                    <li><a href="#">Purchase Return Type</a></li>
-                    <li><a href="#">Purchase Return List</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-chart-bar nav-icon"></i><span>Stock</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Current Stock </a></li>
-                    <li><a href="category-sidebar.html">Transfer</a></li>
-                    <li><a href="dragable-list.html">Adjustment</a></li>
-                    <li><a href="#">Transferred List</a></li>
-                    <li><a href="#">Received List</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-shopping-cart nav-icon"></i><span>Sale</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Pos</a></li>
-                    <li><a href="category-sidebar.html">Manage Sale</a></li>
-                    <li><a href="dragable-list.html">Manage Wholesale</a></li>
-                    <li><a href="#">List Sale Return</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fa fa-book nav-icon"></i><span>Quotation</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Add Quotation</a></li>
-                    <li><a href="category-sidebar.html">Manage Quotation</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-book-open nav-icon"></i><span>Report</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Profit / Loss Report</a></li>
-                    <li><a href="category-sidebar.html">Product Report</a></li>
-                    <li><a href="dragable-list.html">Category Report</a></li>
-                    <li><a href="#">Master Sales Report</a></li>
-                    <li><a href="#">Payment Received Report</a></li>
-                    <li><a href="#">Due Report</a></li>
-                    <li><a href="#">Daily Sales Report</a></li>
-                    <li><a href="#">Monthly Sales Report</a></li>
-                    <li><a href="#">Purchase Report</a></li>
-                    <li><a href="#">Customer Report</a></li>
-                    <li><a href="#">Customer Ledger</a></li>
-                    <li><a href="#">Supplier Report</a></li>
-                    <li><a href="#">Supplier Ledger</a></li>
-                    <li><a href="#">Product Sale report</a></li>
-                    <li><a href="#">Sale Commission</a></li>
-                    <li><a href="#">Supplier Payment</a></li>
-                    <li><a href="#">Salary Report</a></li>
-                    <li><a href="#">Expense Report</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-briefcase nav-icon"></i><span>Expense</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Expense List</a></li>
-                    <li><a href="category-sidebar.html">Expense Type</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-briefcase nav-icon"></i><span>Asset</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Asset List</a></li>
-                    <li><a href="category-sidebar.html">Asset Type</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-briefcase nav-icon"></i><span>Account</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Create Account</a></li>
-                    <li><a href="category-sidebar.html">Account List</a></li>
-                    <li><a href="dragable-list.html">Balance Transfer</a></li>
-                    <li><a href="#">Deposit / Withdraw</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fa fa-users nav-icon"></i><span>Employee</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Employee List</a></li>
-                    <li><a href="category-sidebar.html">Employee Create</a></li>
-                    <li><a href="dragable-list.html">All Paid Salary</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-users-cog nav-icon"></i><span>User</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">All User</a></li>
-                    <li><a href="category-sidebar.html">Create User</a></li>
-                    <li><a href="dragable-list.html">User Role</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fa fa-sms nav-icon"></i><span>Message</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Setting</a></li>
-                    <li><a href="category-sidebar.html">Send SMS</a></li>
-                    <li><a href="dragable-list.html">Message Histroy</a></li>
-                    <li><a href="#">Template</a></li>
-                    <li><a href="#">Group</a></li>
-                    <li><a href="#">Subscription</a></li>
-                </ul>
-            </li>
-            <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-cog nav-icon"></i><span>Setting</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
-                <ul class="sub-menu">
-                    <li class="menu-name"><a href="supplier-list.html">Business Settings</a></li>
-                    <li><a href="category-sidebar.html">Print Settings</a></li>
-                    <li><a href="dragable-list.html">Business Branches</a></li>
-                    <li><a href="#">Notice Send</a></li>
-                    <li><a href="#">VAT Setting</a></li>
+                    <li><a href="dragable-list.html">Category List</a></li>
+                    <li><a href="#">Add Unit</a></li>
                 </ul>
             </li>
         </ul>
@@ -353,46 +231,17 @@
                         <a href="#" class="panel-item">+ Add New Supplier</a>
                     </div>
                     <div class="panel-body">
-                        <div class="panel-search-box">
-                            <form action="">
-                                <fieldset class="ams-input input-verticle">
-                                    <label for="email">Client/Company/Name</label>
-                                    <input type="email" id="name" placeholder="E-mail Address :">
-                                </fieldset>
-                                <fieldset class="ams-input input-verticle">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="name" placeholder="E-mail Address :">
-                                </fieldset>
-                                <fieldset class="ams-input input-verticle">
-                                    <label for="email">Phone number</label>
-                                    <input type="tel" id="phone">
-                                </fieldset>
-                                <fieldset class="ams-input input-verticle">
-                                    <label for="email">Client group</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Any</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                      </select>
-                                </fieldset>
-                                <div class="search-btns">
-                                    <button><i class="fas fa-plus"></i> Advanced</button>
-                                    <button class="panel-srch-btn"><i class="fas fa-search"></i> Search</button>
-                                </div>
-                            </form>
-                        </div>
                         <div class="panel-toolbar">
                             <div class="dataTable-length">
                                 <label for="supplierList-length">Show
-                                        <select id="supplierList-length">
-                                        <option value="10">10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                        </select>
-                                    Entries
-                                </label>
+                    <select id="supplierList-length">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select>
+                    Entries
+                  </label>
                             </div>
                             <div class="panel-toolbar-menu btn-group">
                                 <a href="#" class="toolbar-item active">Copy</a>
@@ -566,7 +415,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap5.min.js"></script>
-    <script src="js/inttel.js"></script>
     <script src="js/main.js"></script>
 </body>
 
