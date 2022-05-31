@@ -31,11 +31,7 @@
     .ams-sidebar.active .sub-menu li a{
         justify-content: center;
     }
-
-    .menu-name{
-        display: none;
-    }
-
+    
     .ams-sidebar.active .menu-name{
         display: block;
         font-weight: 700;
