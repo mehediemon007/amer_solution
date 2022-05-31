@@ -2419,6 +2419,29 @@ a:focus{
   background-color: #388a10;
 }
 
+.fill .sub-tab {
+  height: 40px;
+  background-color: #fff;
+}
+
+.fill .nav-tabs{
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 16px;
+}
+
+.nav-tabs .nav-link{
+  color: #000;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+}
+
+.nav-tabs .nav-link.active{
+  color: #3263F3;
+  background-color: transparent;
+  border-bottom-color:#c53e27;
+}
+
 
 
 
