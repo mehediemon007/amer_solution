@@ -97,6 +97,17 @@
 
         })
     }
+
+    // User Edit Options
+
+    if($("#more-action").length){
+
+        $("#more-action").on("click",function(){
+
+            $(".btn-toolbar .dropdown-menu").slideToggle("300")
+
+        })
+    }
     
 })(jQuery);
 

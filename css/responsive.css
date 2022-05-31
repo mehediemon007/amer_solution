@@ -552,6 +552,14 @@
         height: 40px;
         padding-top: 2px;
     }
+
+    .user-container.active .fill{
+        border-left: none;
+    }
+
+    .btn-toolbar .btn{
+        font-size: 14px;
+    }
 }
 
 /* Layout: Max Width 576px */
@@ -749,6 +757,10 @@
 
 /* Layout: Max WIdth 416px */
 @media only screen and (max-width:416px){
+
+    .ams-panel-wpr{
+        padding: 0 16px;
+    }
 
     .radial-chart{
         height: 415px;

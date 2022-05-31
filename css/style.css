@@ -2391,8 +2391,15 @@ a:focus{
   border-color: #ddd;
 }
 
+.btn-toolbar .dropdown-menu{
+  top: 100%;
+  right: 0;
+  left: auto;
+  margin-top: 4px;
+}
+
 .user-pro{
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .user-pro .profile-pic {
