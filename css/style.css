@@ -2345,17 +2345,16 @@ a:focus{
 }
 
 .close-details {
-  float: right;
   padding-top: 8px;
   cursor: pointer;
   color: #777;
+  margin: 0 0 0 10px;
 }
 
 .btn-toolbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 40px;
 }
 
 .btn-toolbar .btn {
@@ -2393,7 +2392,7 @@ a:focus{
 }
 
 .user-pro{
-  margin-top: -20px;
+  margin-top: 16px;
 }
 
 .user-pro .profile-pic {

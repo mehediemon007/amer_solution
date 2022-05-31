@@ -495,7 +495,42 @@
     .cart-summary{
         margin-bottom: 40px;
     }
+
+    .panel-advanced-search form{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .panel-search-box form{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .user-container.active #user-table{
+        width: 240px;
+    }
+
+    .user-container.active .fill{
+        left: 240px;
+        width: calc(100% - 240px);
+    }
+
+    .user-pro{
+        margin-top: 10px;
+    }
+
+    .fill .nav-tabs{
+        height: 60px;
+        padding-top: 22px;
+    }
+
+    .btn-toolbar .btn{
+        padding: 4px 8px;
+    }
+
+    .main-navigation{
+        display: none;
+    }
 }
+
 /* Layout: Max Width 767px */
 @media only screen and (max-width:767px){
 
@@ -505,6 +540,16 @@
 
     .panel-toolbar-menu{
         display: none;
+    }
+
+    .user-container.active .fill{
+        left: 0;
+        width: 100%;
+    }
+
+    .fill .nav-tabs{
+        height: 40px;
+        padding-top: 2px;
     }
 }
 
@@ -558,6 +603,14 @@
     .increment{
         left: auto;
         right: 5%;
+    }
+
+    .panel-search-box form{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .activities{
+        margin-top: -24px;
     }
 }
 
@@ -699,6 +752,17 @@
     .radial-chart{
         height: 415px;
     }
+
+    .panel-search form{
+        grid-template-columns: 1fr;
+    }
+
+    .user-pro .profile-pic,
+    .users-thumbnail{
+        width: 45px;
+        height: 45px;
+    }
+
 }
 
 /* Layout: Max Width 380px */
@@ -766,6 +830,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .user-details-row{
+        display: block;
+        margin-left: 0;
+    }
+
+    .fill .user-details-header{
+        height: 190px;
+        padding: 10px;
     }
 }
 
