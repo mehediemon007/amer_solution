@@ -343,6 +343,10 @@
         grid-template-columns: 1fr;
         margin-top: 50px;
     }
+
+    .main-navigation{
+        display: none;
+    }
 }
 
 /* Min Width 992px */
@@ -526,9 +530,6 @@
         padding: 4px 8px;
     }
 
-    .main-navigation{
-        display: none;
-    }
 }
 
 /* Layout: Max Width 767px */
