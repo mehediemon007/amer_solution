@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
     <link rel="stylesheet" type="text/css" href="css/inttel.css" />
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />  <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -390,10 +391,6 @@
                                         <input type="text" id="adds" placeholder="">
                                     </fieldset>
                                     <fieldset class="ams-input input-verticle">
-                                        <label for="email">Client/Company/Name</label>
-                                        <input type="email" id="name" placeholder="">
-                                    </fieldset>
-                                    <fieldset class="ams-input input-verticle">
                                         <label for="email">Payment method</label>
                                         <select class="form-select" aria-label="Default select example">
                                             <option selected>Any</option>
@@ -401,6 +398,14 @@
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                           </select>
+                                    </fieldset>
+                                    <fieldset class="ams-input input-verticle">
+                                        <label for="date">Payment Date</label>
+                                        <div class="payment-date">
+                                            <input type="text" name="datetimes" id="date"/>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span></span> <i class="fa fa-caret-down"></i>
+                                        </div>
                                     </fieldset>
                                     <fieldset class="ams-input input-verticle">
                                         <label for="email">Tax Exempt Status</label>
@@ -599,6 +604,8 @@
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap5.min.js"></script>
     <script src="js/inttel.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
     <script src="js/main.js"></script>
 </body>
 
