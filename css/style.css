@@ -2429,10 +2429,10 @@ a:focus{
 }
 
 .fill .nav-tabs{
-  height: 55px;
+  height: 45px;
   background-color: #fff;
   border-bottom: 1px solid #dee2e6;
-  padding-top: 16px;
+  padding-top: 7px;
 }
 
 .nav-tabs .nav-link{
