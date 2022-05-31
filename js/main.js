@@ -80,6 +80,23 @@
           }
         });
     });
+
+    // User Table
+
+    if($("#user-table").length){
+
+        $("#user-table tr").on("click",function(){
+
+            $(".user-container").addClass("active");
+
+        })
+
+        $(".close-details").on("click",function(){
+
+            $(".user-container").removeClass("active");
+
+        })
+    }
     
 })(jQuery);
 
