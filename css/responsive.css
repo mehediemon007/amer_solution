@@ -687,13 +687,17 @@
     .login-heading img{
         width: 100%;
     }
+
+    .donat-chart{
+        height: 450px;
+    }
 }
 
 /* Layout: Max WIdth 416px */
 @media only screen and (max-width:416px){
 
     .radial-chart{
-        height: 450px;
+        height: 415px;
     }
 }
 
@@ -713,10 +717,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-    }
-
-    .donat-chart{
-        height: 450px;
     }
 
     .cart-table{
