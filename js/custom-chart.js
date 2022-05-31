@@ -184,6 +184,14 @@ var stackedOptions = {
             }
           }
       },
+      {
+        breakpoint: 417,
+        options:{
+          chart: {
+            height: 335,
+          },
+        }
+      },
     ]  
   }
   
