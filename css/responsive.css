@@ -622,6 +622,14 @@
 /* Layout: Max Width 480px */
 @media only screen and (max-width:480px){
 
+    .ams-sidebar .sidebar-menu{
+        overflow: scroll;
+    }
+
+    .ams-sidebar .sidebar-menu::-webkit-scrollbar {
+        width: 4px;
+    }
+
     .ams-login-form{
         grid-template-columns: 1fr;
     }
