@@ -627,11 +627,11 @@
     }
 
     .ams-sidebar .sidebar-menu::-webkit-scrollbar {
-        width: 4px;
+        width: 3px;
     }
 
     .ams-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
-        background: #243E8B;;
+        background: rgb(36 62 139 / 80%);
     }
 
     .ams-login-form{
