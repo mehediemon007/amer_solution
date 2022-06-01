@@ -68,6 +68,14 @@
         
     }
 
+    // Nice Select
+
+    // if($(".panel-form-select").length){
+
+    //     $(".panel-form-select").niceSelect();
+
+    // }
+
     // Range Date Picker
 
     $(function() {
