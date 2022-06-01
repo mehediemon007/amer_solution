@@ -1649,6 +1649,7 @@ a:focus{
 
 .select2-dropdown{
   border-color: rgba(221, 221, 221, 0.8);
+  z-index: 1;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b{
@@ -2591,6 +2592,10 @@ a:focus{
   font-size: 14px;
   font-weight: 500;
   padding: 5px 10px;
+}
+
+.daterangepicker{
+  z-index: 1;
 }
 
 
