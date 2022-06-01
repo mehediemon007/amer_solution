@@ -2372,12 +2372,13 @@ a:focus{
   font-size: 1rem;
   line-height: 1.6;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  outline: none;
 }
 
 .btn-toolbar .btn-primary {
   color: #fff;
-  background-color: #d64830;
-  border-color: #d64830;
+  background-color: #243E8B;
+  border-color: #243E8B;
 }
 
 .btn-toolbar .btn-primary i{

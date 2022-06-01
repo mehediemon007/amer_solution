@@ -630,6 +630,10 @@
         width: 4px;
     }
 
+    .ams-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
+        background: #243E8B;;
+    }
+
     .ams-login-form{
         grid-template-columns: 1fr;
     }
