@@ -108,6 +108,22 @@
 
         })
     }
+
+    if($(".edit-user").length){
+
+        $(".edit-user").on("click",function(){
+
+            $(".user-edit-modal").addClass("show")
+
+        })
+
+        $(".cls-user-edit").on("click",function(){
+            
+            $(".user-edit-modal").removeClass("show")
+
+        })
+
+    }
     
 })(jQuery);
 

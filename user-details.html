@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
     <link rel="stylesheet" type="text/css" href="css/inttel.css" />
     <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />  <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -386,7 +387,7 @@
                                 <div class="user-details-header">
                                     <div class="d-flex justify-content-end">
                                         <div class="btn-toolbar">
-                                            <button id="ember696" class="btn btn-primary ember-view btn btn-primary font-small align-bottom me-2" type="submit"> <i class="fas fa-pen"></i>  Edit </button> 
+                                            <button id="ember696" class="btn btn-primary ember-view btn btn-primary font-small align-bottom me-2 edit-user" type="submit"> <i class="fas fa-pen"></i>  Edit </button> 
                                             <div id="ember697" class="dropdown ember-view btn-group align-self-center ml-auto"><span id="more-action" class="dropdown-toggle ember-view btn btn-secondary"> More </span> 
                                                 <div id="ember699" class="dropdown-menu dropdown-menu-right ember-view"> 
                                                     <button class="dropdown-item" data-ember-action="" data-ember-action-700="700"> Mark as Inactive </button>
@@ -464,6 +465,48 @@
         </div>
     </div>
 
+    <!-- User Edit Modal -->
+    <div class="user-edit-modal">
+        <div class="modal-wpr">
+            <div class="modal-content">
+                <div class="modal-head">
+                    <h5>Edit User</h5>
+                    <a href="javascript:void(0)" class="cls-user-edit text-dark"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <fieldset class="ams-input input-verticle">
+                            <label for="select-email">Email Address:</label>
+                            <select class="unit-select-box" name="state" id="select-email">
+                                <option value="AL">ashik@gmail.com</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="ams-input input-verticle">
+                            <label for="name">Name :</label>
+                            <input type="text" id="name" placeholder="Name">
+                        </fieldset> 
+                        <fieldset class="ams-input input-verticle">
+                            <label for="select-role">Role:</label>
+                            <select class="unit-select-box" name="state" id="select-role">
+                                <option value="AL">Admin</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </fieldset> 
+                    </form>
+                </div>
+                <div class="modal-footer"> 
+                    <button id="ember357" class="btn btn-primary ember-view" type="submit">Save </button> 
+                    <button class="btn btn-secondary" data-ember-action="" data-ember-action-358="358">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Js files -->
     <script src="js/modernizr-3.5.0.min.js"></script>
 
@@ -474,6 +517,7 @@
     <script src="js/inttel.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/daterangepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
