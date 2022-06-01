@@ -531,6 +531,14 @@
 /* Layout: Max Width 767px */
 @media only screen and (max-width:767px){
 
+    #supplier-table_wrapper .row:first-child div[class^='col-']{
+        width: 50% !important;
+    }
+
+    #supplier-table_wrapper *{
+        text-align: left;
+    }
+
     .ams-customer-add-form .input-group.input-verticle{
         grid-template-columns: 1fr
     }
@@ -760,6 +768,14 @@
 
     .donat-chart{
         height: 450px;
+    }
+
+    #supplier-table_wrapper .row:first-child{
+        gap: 16px;
+    }
+
+    #supplier-table_wrapper .row:first-child div[class^='col-']{
+        width: 100% !important;
     }
 }
 
