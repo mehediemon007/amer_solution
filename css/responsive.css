@@ -800,6 +800,10 @@
         height: 45px;
     }
 
+    .dataTable-length select{
+        padding: 3px 6px;
+    }
+
 }
 
 /* Layout: Max Width 380px */
