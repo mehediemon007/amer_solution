@@ -587,7 +587,7 @@ input::placeholder{
 .nav-left{
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 16px;
 }
 
 .nav-right{
@@ -800,6 +800,11 @@ input::placeholder{
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.main-navigation ul{
+  width: 100%;
+  display: flex;
 }
 
 .main-navigation li{

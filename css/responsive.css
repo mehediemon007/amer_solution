@@ -48,7 +48,7 @@
  /* Layout: Max 1600px  */
 @media only screen and (max-width: 1600px) {
     .ams-admin{
-        margin-right: 0;
+        margin: 0 0 0 8px;
     }
 
     .single-info-box,
@@ -203,6 +203,7 @@
 
     .ams-sidebar{
         position: fixed;
+        height: calc(100vh - 65px);
         left: -220px;
         top: 64px;
         z-index: 10;
@@ -220,13 +221,24 @@
     }
     
     .ams-sidebar .sidebar-menu{
+        overflow: scroll;
         margin-top: -1px;
+        padding-bottom: 32px;
+    }
+
+    .ams-sidebar .sidebar-menu::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .ams-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
+        background: rgb(36 62 139 / 80%);
     }
 
     .ams-main-content,
     .ams-sidebar.active + .ams-main-content{
         width: 100%;
         left: 0;
+        overflow-x: hidden;
     }
 
     .ams-sidebar.active .sidebar-menu .nav-expand i{
@@ -324,6 +336,10 @@
         opacity: 1;
     }
 
+    .admin-details{
+        display: none;
+    }
+
     .product-list{
         grid-template-columns: repeat(3,1fr);
     }
@@ -340,9 +356,9 @@
         margin-top: 50px;
     }
 
-    .main-navigation{
+    /* .main-navigation{
         display: none;
-    }
+    } */
 }
 
 /* Min Width 992px */
@@ -383,6 +399,11 @@
 
 /* Layout: Max Width 991px */
 @media only screen and (max-width:991px){
+
+    .main-navigation{
+        max-width: 50%;
+        overflow-x: scroll;
+    }
 
     .ams-login-form{
         width: 90%;
@@ -629,18 +650,6 @@
 
 /* Layout: Max Width 480px */
 @media only screen and (max-width:480px){
-
-    .ams-sidebar .sidebar-menu{
-        overflow: scroll;
-    }
-
-    .ams-sidebar .sidebar-menu::-webkit-scrollbar {
-        width: 3px;
-    }
-
-    .ams-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
-        background: rgb(36 62 139 / 80%);
-    }
 
     .ams-login-form{
         grid-template-columns: 1fr;
