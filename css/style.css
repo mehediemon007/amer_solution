@@ -808,7 +808,6 @@ input::placeholder{
 }
 
 .main-navigation li{
-  position: relative;
   display: inline-block;
 }
 
