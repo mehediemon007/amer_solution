@@ -401,7 +401,7 @@
 @media only screen and (max-width:991px){
 
     .main-navigation{
-        max-width: 50%;
+        max-width: 310px;
         overflow-x: scroll;
     }
 
@@ -790,6 +790,10 @@
 
 /* Layout: Max WIdth 416px */
 @media only screen and (max-width:416px){
+
+    .main-navigation{
+        max-width: 200px;
+    }
 
     .ams-panel-wpr{
         padding: 0 16px;
