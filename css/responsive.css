@@ -205,7 +205,7 @@
         position: fixed;
         height: calc(100vh - 65px);
         left: -220px;
-        top: 64px;
+        top: 66px;
         z-index: 10;
         transition: .3s;
     }
