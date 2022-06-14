@@ -223,7 +223,7 @@
     .ams-sidebar .sidebar-menu{
         overflow: scroll;
         margin-top: -1px;
-        padding-bottom: 32px;
+        padding-bottom: 10px;
     }
 
     .ams-sidebar .sidebar-menu::-webkit-scrollbar {
@@ -400,9 +400,18 @@
 /* Layout: Max Width 991px */
 @media only screen and (max-width:991px){
 
+    .nav-left{
+        position: relative;
+    }
+
     .main-navigation{
         max-width: 310px;
         overflow-x: scroll;
+    }
+
+    .main-navigation .sub-menu{
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .ams-login-form{
