@@ -536,6 +536,11 @@ input::placeholder{
   transition: all .3s;
 }
 
+.ams-full-view{
+  width: 100%;
+  left: 0;
+}
+
 .ams-sidebar.active + .ams-main-content{
   left: 55px;
   width: calc(100% - 55px);
