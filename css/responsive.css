@@ -203,9 +203,9 @@
 
     .ams-sidebar{
         position: fixed;
-        height: calc(100vh - 65px);
+        height: calc(100vh - 55px);
         left: -220px;
-        top: 66px;
+        top: 56px;
         z-index: 10;
         transition: .3s;
     }
@@ -255,7 +255,7 @@
     .ams-nav-wpr.fixed{
         position: fixed;
         width: 100%;
-        height: 65px;
+        /* height: 65px; */
         background-color: #fff;
         z-index: 1;
     }
