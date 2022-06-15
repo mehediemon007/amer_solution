@@ -659,7 +659,7 @@ input::placeholder{
 .nav-search-input{
   position: absolute;
   display: none;
-  width: 50%;
+  width: 45%;
   height: 0;
   top: 58px;
   right: 0;
@@ -681,6 +681,7 @@ input::placeholder{
   border-radius: 0;
   border-bottom: 1px solid #DDDDDD;
   margin-left: 4%;
+  padding: 16px;
 }
 
 .ams-notification-widget{
