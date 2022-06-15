@@ -773,7 +773,7 @@ input::placeholder{
 .dropbtn {
   background-color: transparent;
   color: #B5AFC7;
-  padding: 16px;
+  padding: 16px 8px;
   font-size: 16px;
   border: none;
   cursor: pointer;
