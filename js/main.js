@@ -62,7 +62,7 @@
         $(".advanced-btn").on("click",function(){
 
             if($(".panel-advanced-search").length){
-                $(".panel-advanced-search").slideToggle("300")
+                $(".panel-advanced-search").slideToggle("fast")
             }
         })
         

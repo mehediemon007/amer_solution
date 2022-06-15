@@ -833,7 +833,6 @@ input::placeholder{
   position: absolute;
   min-width: 135px;
   background-color: #fff;
-  padding: 4px 0;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   opacity: 0;
   visibility: hidden;
@@ -844,12 +843,18 @@ input::placeholder{
 .main-navigation .sub-menu li{
   position: relative;
   display: block;
-  padding: 0 10px;
+  padding: 0 12px;
+  transition: .3s;
+}
+
+.main-navigation .sub-menu li:hover{
+  padding-left: 16px;
+  background-color: #ddd;
 }
 
 .main-navigation .sub-menu li a{
   display: block;
-  padding: 5px 0;
+  padding: 6px 0;
 }
 
 .main-navigation .sub-menu li.has-menu a{
@@ -1039,6 +1044,7 @@ input::placeholder{
   margin: 0 5px;
   color: #B5AFC7;
   border-color: #DDDDDD;
+  border-radius: 5px;
   outline: none;
 }
 
@@ -1069,6 +1075,8 @@ input::placeholder{
 }
 
 .dataTable{
+  width: 100%;
+  overflow-x: scroll;
   border: 1px solid #DDDDDD;
   border-radius: 5px;
 }
@@ -2193,7 +2201,7 @@ a:focus{
   background-color: #f6f6f6;
   border-bottom: 1px dashed #ccc;
   border-radius: 4px;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .panel-search form{
@@ -2209,6 +2217,8 @@ a:focus{
 
 .panel-advanced-search{
   display: none;
+  background-color: #f6f6f6;
+  padding: 10px;
 }
 
 .panel-search input{
