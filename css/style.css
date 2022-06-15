@@ -346,6 +346,11 @@ input::placeholder{
 
 /*----- Sidebar -----*/
 
+.brand-logo a{
+  width: max-content;
+  white-space: nowrap;
+}
+
 .ams-sidebar{
   position: absolute;
   top: 0;
@@ -736,7 +741,7 @@ input::placeholder{
 .ams-admin{
   display: flex;
   align-items: center;
-  margin: 0 50px 0 24px;
+  margin: 0 16px;
   cursor: pointer;
 }
 

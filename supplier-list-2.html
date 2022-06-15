@@ -180,6 +180,12 @@
         <!-- Nav Menu -->
         <div class="ams-nav-wpr">
             <div class="nav-left">
+                <div class="brand-logo">
+                    <a href="dashboard.html">
+                        <span class="brand-image"><img src="images/logo/logo.png" alt="logo"></span>
+                        <span class="brand-name">AmarSolution</span>
+                    </a>
+                </div>
                 <span class="nav-toggle d-lg-none"><i class="fas fa-bars"></i></span>
                 <nav class="main-navigation d-none d-lg-block">
                     <ul>
@@ -319,14 +325,22 @@
                     </div>
                 </div>
                 <span class="nav-item"><i class="fas fa-shopping-cart"></i></span>
-                <div class="ams-admin">
-                    <div class="admin-image">
-                        <img src="images/admin.jpg" alt="admin" />
-                        <i class="fas fa-circle"></i>
+                <div class="ams-admin-wpr">
+                    <div onclick="profileSelect()" class="ams-admin">                               
+                        <div class="admin-image">
+                            <img src="images/admin.jpg" alt="admin">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="admin-details">
+                            <h6 class="mb-0">Akash Mia</h6>
+                            <p>Admin</p>
+                        </div>
                     </div>
-                    <div class="admin-details">
-                        <h6 class="mb-0">Akash Mia</h6>
-                        <p>Admin</p>
+                    <div id="profile-dropdown" class="dropdown-content">
+                        <a href="#"><i class="far fa-edit"></i> Edit Profile</a>
+                        <a href="#"><i class="far fa-bell"></i> Notification</a>
+                        <a href="#"><i class="fas fa-exclamation-circle"></i> Change Password</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </div>
                 </div>
                 <span class="nav-item menu-stack"><i class="fas fa-ellipsis-v"></i></span>

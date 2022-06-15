@@ -27,13 +27,7 @@
 
 <body>
     <!-- SideBar -->
-    <div class="ams-sidebar">
-        <div class="brand-logo d-none d-lg-block">
-            <a href="dashboard.html">
-                <span class="brand-image"><img src="images/logo/logo.png" alt="logo"></span>
-                <span class="brand-name">AmarSolution</span>
-            </a>
-        </div>
+    <div class="ams-sidebar d-lg-none">
         <ul class="sidebar-menu">
             <li><a href="#" class="active"><i class="fas fa-columns nav-icon"></i><span>Dashboard</span></a></li>
             <li class="has-menu"><a href="#" class="has-children"><i class="fas fa-user-tie nav-icon"></i><span>Supplier</span><span class="nav-expand"><i class="fas fa-angle-right"></i></span></a>
@@ -182,19 +176,18 @@
 
     <!-- Main Content -->
 
-    <div class="ams-suppliers ams-main-content">
+    <div class="ams-suppliers ams-main-content ams-full-view">
         <!-- Nav Menu -->
         <div class="ams-nav-wpr">
             <div class="nav-left">
-                <span class="nav-toggle"><i class="fas fa-bars"></i></span>
-                <nav class="main-navigation">
-                    <!-- <ul>
-                        <li><a href="#">Customer Recive</a></li>
-                        <li><a href="#">Supplier Payment</a></li>
-                        <li><a href="#">Today's Summery</a></li>
-                        <li><a href="#">Return Order</a></li>
-                        <li><a href="#">POS</a></li>
-                    </ul> -->
+                <div class="brand-logo">
+                    <a href="dashboard.html">
+                        <span class="brand-image"><img src="images/logo/logo.png" alt="logo"></span>
+                        <span class="brand-name">AmarSolution</span>
+                    </a>
+                </div>
+                <span class="nav-toggle d-lg-none"><i class="fas fa-bars"></i></span>
+                <nav class="main-navigation d-none d-lg-block">
                     <ul>
                         <li><a href="#" class=""><i class="fas fa-user-tie nav-icon"></i><span>Supplier</span><span class="nav-expand"><i class="fas fa-angle-down"></i></span></a>
                             <ul class="sub-menu">
@@ -260,13 +253,13 @@
                 </nav>
             </div>
             <div class="nav-right">
-                <div class="lang-dropdown">
+                <!-- <div class="lang-dropdown">
                     <button onClick="langSelect()" class="dropbtn">English <i class="fas fa-caret-down ms-2"></i></button>
                     <div id="lang-dropdown" class="dropdown-content">
                       <a href="#">French</a>
                       <a href="#">Dutch</a>
                     </div>
-                </div>
+                </div> -->
                 <span class="nav-search">
                     <i class="fas fa-search search-icon"></i>
                     <div class="nav-search-input">
@@ -274,7 +267,7 @@
                         <span class="search-close"><i class="fas fa-times"></i></span>
                     </div>
                 </span>
-                <div onclick="notifySelect()" class="nav-item"><i class="far fa-bell"></i>
+                <!-- <div onclick="notifySelect()" class="nav-item"><i class="far fa-bell"></i>
                     <div class="ams-notification-widget dropdown-content" id="notify-dropdown">
                         <div class="notify-title">
                             <h6>Notifications</h6>
@@ -330,8 +323,8 @@
                             <a href="#">See All..</a>
                         </div>
                     </div>
-                </div>
-                <span class="nav-item"><i class="fas fa-shopping-cart"></i></span>
+                </div> -->
+                <!-- <span class="nav-item"><i class="fas fa-shopping-cart"></i></span> -->
                 <div class="ams-admin-wpr">
                     <div onclick="profileSelect()" class="ams-admin">                               
                         <div class="admin-image">
